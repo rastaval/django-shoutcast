@@ -179,6 +179,7 @@ INSTALLED_APPS = [
     "about",
     "profiles",
     "music",
+    "playlist",
 ]
 
 FIXTURE_DIRS = [

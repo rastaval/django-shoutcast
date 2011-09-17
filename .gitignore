@@ -2,3 +2,6 @@
 *.swp
 *.db
 *.mp3
+*.xml
+*.iml
+.name
