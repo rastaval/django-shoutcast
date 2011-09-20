@@ -180,6 +180,7 @@ INSTALLED_APPS = [
     "profiles",
     "music",
     "playlist",
+    "dj",
 ]
 
 FIXTURE_DIRS = [

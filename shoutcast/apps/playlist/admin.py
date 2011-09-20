@@ -1,5 +1,16 @@
 from django.contrib import admin
 from playlist.models import PlayList, PlayListGroup
 
-admin.site.register(PlayList)
-admin.site.register(PlayListGroup)
+
+class PlayListGroupInline(admin.TabularInline):
+    model = PlayListGroup
+    extra = 5
+
+
+class PlayListAdmin(admin.ModelAdmin):
+    inlines = (PlayListGroupInline,)
+
+
+admin.site.register(PlayList, PlayListAdmin)
+
+

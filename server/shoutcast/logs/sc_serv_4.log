@@ -1,0 +1,7 @@
+2011-09-10 10:36:20	I	msg:[MAIN] Logger updating log file to use
+2011-09-10 10:36:20	I	msg:[MAIN] Loaded config from ./sc_serv.conf
+2011-09-10 10:36:20	I	msg:[MAIN] Calculated CPU count is 4
+2011-09-10 10:36:20	I	msg:[MAIN] Starting 4 network threads
+2011-09-10 10:36:20	E	msg:[CONFIG] You need to specify different passwords for `adminpassword' and `password'.
+2011-09-10 10:36:20	I	msg:[MAIN] Runner shutdown
+2011-09-10 10:36:20	I	msg:<***>	Logger shutdown

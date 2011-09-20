@@ -1,7 +1,16 @@
-2011-09-10 10:36:20	I	msg:[MAIN] Logger updating log file to use
-2011-09-10 10:36:20	I	msg:[MAIN] Loaded config from ./sc_serv.conf
-2011-09-10 10:36:20	I	msg:[MAIN] Calculated CPU count is 4
-2011-09-10 10:36:20	I	msg:[MAIN] Starting 4 network threads
-2011-09-10 10:36:20	E	msg:[CONFIG] You need to specify different passwords for `adminpassword' and `password'.
-2011-09-10 10:36:20	I	msg:[MAIN] Runner shutdown
-2011-09-10 10:36:20	I	msg:<***>	Logger shutdown
+2011-09-10 10:36:35	I	msg:<***>	Logger startup
+2011-09-10 10:36:35	I	msg:<***>	version 2.0.0.29
+2011-09-10 10:36:35	D	msg:<***>	
+2011-09-10 10:36:35	I	msg:***************************************************************
+2011-09-10 10:36:35	I	msg:** SHOUTcast Distributed Network Audio Server (DNAS)
+2011-09-10 10:36:35	I	msg:** Copyright (C) 1999-2011 Nullsoft, Inc.  All Rights Reserved.
+2011-09-10 10:36:35	I	msg:** Use "sc_serv filename.conf" to specify a config file.
+2011-09-10 10:36:35	I	msg:***************************************************************
+2011-09-10 10:36:35	I	msg:[SHOUTcast] DNAS/posix(linux x86) v2.0.0.29 (Jul 31 2011) starting up...
+2011-09-10 10:36:35	I	msg:[MAIN] PID: 29112
+2011-09-10 10:36:35	I	msg:[MAIN] Loaded config from sc_serv.conf
+2011-09-10 10:36:35	I	msg:[MAIN] Calculated CPU count is 4
+2011-09-10 10:36:35	I	msg:[MAIN] Starting 4 network threads
+2011-09-10 10:36:35	E	msg:[CONFIG] You need to specify different passwords for `adminpassword' and `password'.
+2011-09-10 10:36:35	I	msg:[MAIN] Runner shutdown
+2011-09-10 10:36:35	I	msg:<***>	Logger shutdown
