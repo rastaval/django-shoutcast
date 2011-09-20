@@ -3,17 +3,13 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.core.files.storage import FileSystemStorage
 from django.template.defaultfilters import slugify
+from django.conf import settings
 
 from utils.song_info import SongInfo
-import slumber
 from mutagen.mp3 import MP3
-import mutagen
 
 
-ECHOES_NEST_API_KEY = "6ELTPYPVXF11BNXV0"
-MUSIC_STORAGE_PATH = "/home/alan/Music/"
-MUSIC_URL = "http://music.jonny290.com/"
-fs = FileSystemStorage(location=MUSIC_STORAGE_PATH, base_url=MUSIC_URL)
+fs = FileSystemStorage(location=settings.MUSIC_STORAGE_PATH, base_url=settings.MUSIC_URL)
 
 class Song(models.Model):
     file_path = models.CharField(max_length=420)
