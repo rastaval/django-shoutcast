@@ -12,9 +12,13 @@
 
 
 {% block body %}
-
+aaa
 <div id="logs">
     <h1>Logs</h1>
+</div>
+
+<div id="status">
+    <h1>Status</h1>
 </div>
 
 <div id="data">
@@ -29,6 +33,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
         setInterval("logData()", 10000);
+        getStatus();
     });
 </script>
 

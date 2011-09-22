@@ -4,7 +4,9 @@
 # Also remember to use the correct path format for the OS you are using and to
 # ensure that the files you want to play are present in the location you choose
 # e.g.
-../music/shoutcast.mp3
+
+#!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+
 #
 # In this example we will just assume that all of the files associated to the
 # playlist are in one folder and all have an mp3 extension though there is no

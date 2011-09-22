@@ -17,3 +17,11 @@ class PlayListGroup(models.Model):
 
     def __unicode__(self):
         return u'%s - %s - %s' % (self.order, self.song, self.playlist)
+
+
+class RecentTracks(models.Model):
+    song = models.ForeignKey(Song)
+    date = models.DateTimeField(auto_now=True, auto_now_add=True, blank=True, null=True)
+
+    def __unicode__(self):
+        return u'%s' % self.song

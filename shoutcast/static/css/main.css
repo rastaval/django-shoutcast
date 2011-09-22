@@ -10,3 +10,16 @@
     text-align: center;
     margin-bottom: 10px
 }
+
+#status {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    overflow:  scroll;
+}
+
+#status h1 {
+    text-align: center;
+    margin-bottom: 10px
+}

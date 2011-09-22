@@ -12,9 +12,7 @@ handler500 = "pinax.views.server_error"
 
 
 urlpatterns = patterns("",
-    url(r"^$", direct_to_template, {
-        "template": "homepage.html",
-    }, name="home"),
+    url(r"^$", "music.views.index", name="home"),
     url(r"^admin/invite_user/$", "pinax.apps.signup_codes.views.admin_invite_user", name="admin_invite_user"),
     url(r"^admin/", include(admin.site.urls)),
     url(r"^about/", include("about.urls")),
@@ -24,6 +22,8 @@ urlpatterns = patterns("",
     url(r"^notices/", include("notification.urls")),
     url(r"^announcements/", include("announcements.urls")),
     url(r"^management/", include("management.urls")),
+    url(r"^show/(?P<id>\d)/$", "dj.views.showpage", name="dj_show"),
+    url(r"^shows/", "dj.views.shows", name="show_list"),
 )
 
 

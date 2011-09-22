@@ -1,0 +1,27 @@
+{% extends "site_base.html" %}
+
+{% block header_main_text %}
+Check out these sweet shows done by Real Cool People
+{% endblock %}
+
+{% block header_sub_text %}
+Schwicka-Schwicka what what
+{% endblock %}
+
+{% block dj_active %}active{% endblock %}
+
+{% block main_content %}
+
+<div class="row">
+    <div class="span 14">
+
+       <ul class="unstyled" id="showlist">
+           {% for show in shows %}
+           <li><a style="font-size: 32px;" href="/show/{{ show.id }}">{{ show.show_name }} by {{ show.dj }}</a></li>
+           {% endfor %}
+       </ul>
+
+    </div>
+</div>
+
+{% endblock %}

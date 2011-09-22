@@ -8,4 +8,6 @@
             $('#logs').append(data + "<br><br>");
         });
     };
+
+    
 })(jQuery);

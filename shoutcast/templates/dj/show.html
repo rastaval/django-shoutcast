@@ -1,0 +1,25 @@
+{% extends "site_base.html" %}
+
+{% block header_main_text %}
+{{ page.show_name }}
+{% endblock %}
+
+{% block header_sub_text %}
+Brought to you by DJ {{ page.dj }}
+{% endblock %}
+
+{% block dj_active %}active{% endblock %}
+
+{% block main_content %}
+
+<div class="row">
+    <div class="span 14">
+        <h1>Show Description</h1>
+        {{ page.description }}
+
+        <h4>Download Show</h4>
+        <a href="{{ page.show_file.url }}">Click Me</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,113 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+
+{% block body %}
+
+<div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">YOSFM</a>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">DJ's</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+</div>
+
+<header class="jumbotron masthead" id="overview">
+    <div class="inner">
+        <div class="container">
+            <h1>What's the Haps?</h1>
+            <p class="lead">
+                We like to play music. Check it out yo.
+            </p>
+        </div>
+    </div>
+</header>
+
+<div class="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<div class="content">
+
+    <div class="nowplaying">
+    </div>
+
+    <div class="row">
+
+        <div class="span9">
+            <div class="row">
+                <div class="span9">
+
+                    <div class="alert-message block-message warning" id="nowplaying">
+                        {% if track == "dj" %}
+                        <h2>A dj saved my life last night and hes playing right now!</h2>
+                        <h4><a href="#">click to listen to {{ current_song }}</a></h4>
+                        {% endif %}
+                        {% if track == "playlist" %}
+                        <h3>Now Playing:</h3>
+                        <b>{{ current_song.title }} by {{ current_song.artist }}</b>
+                        <h4><a href="#">Listen Now!</a></h4>
+                        {% endif %}
+                    </div>
+
+                    <h1 id="playedheader">Recently Played</h1>
+                    {% for songs in songs %}
+                    <div class="songbox">
+
+                        <div class="artistimage">
+                            <a href="{{ songs.song.artist.artist_image }}"><img src="{{ songs.song.artist.artist_image }}" /></a>
+                        </div>
+
+                        <div class="songtitle">
+                            {{ songs.song.title }} by {{ songs.song.artist }}
+                        </div>
+
+                        <div class="artistbio">
+                            <p><a href="{{ songs.song.artist.artist_url }}"><b>artist bio</b></a> :: {{ songs.song.artist.artist_bio|truncatewords:35 }}</p>
+                        </div>
+
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="span5" id="shows">
+            <div class="row">
+                <div class="span5" id="showlist">
+                    <h4>Past Shows</h4>
+                    <ul class="unstyled" id="pastlist">
+                        {% for show in shows %}
+                        <li>{{ show.date|timesince }} ago - <a href="#">{{ show.show_name }} (DJ {{ show.dj }})</a></li>
+                        {%  endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+    
+{% endblock %}
+
+

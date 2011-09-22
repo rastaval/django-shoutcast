@@ -7,50 +7,80 @@
 
 {% block body_class %}home{% endblock %}
 
-{% block body %}
-    
-    <h1>{% trans "Welcome to Pinax" %}</h1>
-    
-    <p>
-        {% blocktrans %}
-        <b>Pinax</b> is a <a href="http://djangoproject.com/">Django</a>
-        project intended to provide a starting point for websites. By
-        integrating numerous reusable Django apps to take care of the
-        things that many sites have in common, it lets you focus on what
-        makes your site different.
-        {% endblocktrans %}
-    </p>
-    
-    <p>
-        {% blocktrans %}
-        For more information about Pinax, see
-        <a href="http://pinaxproject.com/">http://pinaxproject.com/</a>.
-        {% endblocktrans %}
-    </p>
-    
-    <h2>{% trans "About this project" %}</h2>
-    
-    <p>
-        {% blocktrans %}
-        This project comes with the bare minimum set of applications and
-        templates to get you started. It includes no extra tabs, only the
-        profile and notices tabs are included by default. From here you can
-        add any extra functionality and applications that you would like.
-        {% endblocktrans %}
-    </p>
-    
-    <hr />
-    {% if user.is_authenticated %}
-        {% url what_next as what_next_url %}
-        <p class="what_next">{% blocktrans %}Wondering <a href="{{ what_next_url }}">What Next</a>?{% endblocktrans %}</p>
-    {% else %}
-        {% url acct_login as login_url %}
-        {% ifsetting ACCOUNT_OPEN_SIGNUP %}
-            {% url acct_signup as signup_url %}
-            <p>{% blocktrans %}You can <a href="{{ signup_url }}">Sign up</a> and <a href="{{ login_url }}">Log in</a> to try out the site.{% endblocktrans %}</p>
-        {% else %}
-            <p>{% blocktrans %}You can <a href="{{ login_url }}">Log in</a> to try out the site.{% endblocktrans %}</p>
-        {% endifsetting %}
-    {% endif %}
-    
+
+{% block home_active %}active{% endblock %}
+
+{% block main_content %}
+    <div class="nowplaying">
+    </div>
+
+    <div class="row">
+
+        <div class="span9">
+            <div class="row">
+                <div class="span9">
+
+                    <div class="alert-message block-message warning" id="nowplaying">
+                        {% if track == "dj" %}
+                        <h2>A dj saved my life last night and hes playing right now!</h2>
+                        <h4><a href="#">click to listen to {{ current_song }}</a></h4>
+                        {% endif %}
+                        {% if track == "playlist" %}
+                        <h3>Now Playing:</h3>
+                        <b>{{ current_song.title }} by {{ current_song.artist }}</b>
+                        <h4><a href="#">Listen Now!</a></h4>
+                        {% endif %}
+                    </div>
+
+                    <h1 id="playedheader">Recently Played</h1>
+                    {% for songs in songs %}
+                    <div class="songbox">
+
+                        <div class="artistimage">
+                            <a href="{{ songs.song.artist.artist_image }}"><img src="{{ songs.song.artist.artist_image }}" /></a>
+                        </div>
+
+                        <div class="songtitle">
+                            {{ songs.song.title }} by {{ songs.song.artist }}
+                        </div>
+
+                        <div class="artistbio">
+                            <p><a href="{{ songs.song.artist.artist_url }}"><b>artist bio</b></a> :: {{ songs.song.artist.artist_bio|truncatewords:35 }}</p>
+                        </div>
+
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="span5" id="shows">
+            <div class="row">
+                <div class="span5" id="showlist">
+                    <h4>Past Shows</h4>
+                    <ul class="unstyled" id="pastlist">
+                        {% for show in shows %}
+                        <li>{{ show.date|timesince }} ago - <a href="show/{{ show.id }}">{{ show.show_name }} (DJ {{ show.dj }})</a></li>
+                        {%  endfor %}
+                    </ul>
+                </div>
+            </div>
+
+        </div><div class="span5" id="shows">
+            <div class="row">
+                <div class="span5" id="showlist">
+                    <h4>Cool Links</h4>
+                    <ul class="unstyled" id="pastlist">
+                        {% for link in links %}
+                        <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+                        {%  endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
 {% endblock %}
+
+
