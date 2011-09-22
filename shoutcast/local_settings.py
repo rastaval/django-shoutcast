@@ -10,7 +10,7 @@ DATABASES = {
 }
 
 ECHOES_NEST_API_KEY = "6ELTPYPVXF11BNXV0"
-MUSIC_STORAGE_PATH = "/home/alan/Music"
+MUSIC_STORAGE_PATH = "/home/alan/"
 MUSIC_URL = "http://localhost/"
 MUSIC_PATHS = []
 API_URL = "http://localhost:7999"

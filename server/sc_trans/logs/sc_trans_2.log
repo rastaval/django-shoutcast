@@ -1,61 +1,695 @@
-2011-09-21 17:43:20	I	msg:<***>	Logger startup
-2011-09-21 17:43:20	I	msg:<***>	version 2.0.0.51
-2011-09-21 17:43:20	D	msg:<***>	
-2011-09-21 17:43:20	I	msg:***************************************************************
-2011-09-21 17:43:20	I	msg:** TRANScast Distributed Network Audio Content Provider
-2011-09-21 17:43:20	I	msg:** Copyright (C) 2000-2011 Nullsoft, Inc.  All Rights Reserved.
-2011-09-21 17:43:20	I	msg:** Use "sc_trans filename.conf" to specify a config file.
-2011-09-21 17:43:20	I	msg:***************************************************************
-2011-09-21 17:43:20	I	msg:[TRANSCast] DNAS/posix(linux x86) v2.0.0.51 (Jul 29 2011) starting up...
-2011-09-21 17:43:20	I	msg:[MAIN] PID: 19836
-2011-09-21 17:43:20	I	msg:[MAIN] Loaded config from sc_trans_dj.conf
-2011-09-21 17:43:20	I	msg:[MAIN] TimeMultiplier = 1, TimeShift = 0
-2011-09-21 17:43:20	I	msg:[CALENDARMGR] Adding DJ event: m_djName=dj  m_archive=1  m_id=1 m_startDate=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_endDate=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_duration=0 m_timeOffset=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_hasStartDate=0 m_hasEndDate=0 m_hasDuration=0 m_hasTimeOffset=0 m_repeat=0
-2011-09-21 17:43:20	I	msg:[VUPUSH] 101 VU images loaded for left channel
-2011-09-21 17:43:20	I	msg:[VUPUSH] 101 VU images loaded for right channel
-2011-09-21 17:43:20	I	msg:[PLAYLISTMGR] Playlist load from file playlists/main.lst
-2011-09-21 17:43:20	I	msg:[PLAYLISTMGR] Caching playlist playlists/main.lst
-2011-09-21 17:43:20	I	msg:[PLAYLISTMGR] Load complete
-2011-09-21 17:43:20	I	msg:[MAIN] Streaming thread starting
-2011-09-21 17:43:20	I	msg:[SOURCERELAY] Thread starting
-2011-09-21 17:43:20	I	msg:[RESAMPLER] Deactivated 44100/2 == 44100/2
-2011-09-21 17:43:20	I	msg:[SOURCEANDENDPOINTMANAGER] Encoder thread 1 starting
-2011-09-21 17:43:20	I	msg:[SOURCEANDENDPOINTMANAGER] Broadcast thread 1 starting
-2011-09-21 17:43:20	I	msg:[MAIN] Playlist decoder thread starting
-2011-09-21 17:43:20	I	msg:[MICROSERVER] Listening for connection on port 8505
-2011-09-21 17:43:20	I	msg:[MAIN] SHOUTcast 2 receiver thread starting
-2011-09-21 17:43:20	I	msg:[MICROSERVER] Listening for connection on port 8501
-2011-09-21 17:43:20	I	msg:[MAIN] Broadcast Receiver thread starting
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Giving replay gain calculator a head start
-2011-09-21 17:43:20	I	msg:[DECODE] Giving replay gain calculator a head start
-2011-09-21 17:43:20	I	msg:[AAC] AAC setup complete
-2011-09-21 17:43:20	I	msg:[RGCALC] Thread running
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Running
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Creating stream socket
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Connecting to stream host
-2011-09-21 17:43:20	I	msg:[DECODE] Begin decoding
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Sending Ultravox 2.1 authentication
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Mime type
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Broadcast setup
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Negotiating buffer sizes
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Negotiated buffer size is 140KB
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Negotiating payload sizes
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Negotiated payload size is 16377
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Configuring ICY-NAME [Jonny two ninety]
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Configuring ICY-GENRE [Misc]
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Configuring ICY-URL [http://www.cattes.us/]
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Configuring ICY-PUB [0]
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Flush metadata
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Standby
-2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Streaming
-2011-09-21 17:43:20	E	msg:[PLAYLISTMGR] runRemoteApp WEXITSTATUS() == 1 [/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue 3]
-2011-09-21 17:43:20	I	msg:[PLAYLISTMGR] Deactivating playlist=main id=-1
-2011-09-21 17:43:22	W	msg:[DECODE] Playlist is empty
-2011-09-21 17:43:26	I	msg:[MAIN] Exiting loop
-2011-09-21 17:43:26	I	msg:[AAC] Exiting encoder thread
-2011-09-21 17:43:26	E	msg:[DECODE] Playlist has run dry
-2011-09-21 17:43:26	I	msg:[DECODE] Exiting decoder thread
-2011-09-21 17:43:27	I	msg:[RGCALC] Thread exiting
-2011-09-21 17:43:27	I	msg:[RESAMPLER] tIn=0 tOut=0 bIn=0 bOut=0
-2011-09-21 17:43:27	I	msg:[CROSSFADER] in=0 out=0
-2011-09-21 17:43:27	I	msg:<***>	Logger shutdown
+2011-09-21 17:58:51	I	msg:<***>	Logger startup
+2011-09-21 17:58:51	I	msg:<***>	version 2.0.0.51
+2011-09-21 17:58:51	D	msg:<***>	
+2011-09-21 17:58:51	I	msg:***************************************************************
+2011-09-21 17:58:51	I	msg:** TRANScast Distributed Network Audio Content Provider
+2011-09-21 17:58:51	I	msg:** Copyright (C) 2000-2011 Nullsoft, Inc.  All Rights Reserved.
+2011-09-21 17:58:51	I	msg:** Use "sc_trans filename.conf" to specify a config file.
+2011-09-21 17:58:51	I	msg:***************************************************************
+2011-09-21 17:58:51	I	msg:[TRANSCast] DNAS/posix(linux x86) v2.0.0.51 (Jul 29 2011) starting up...
+2011-09-21 17:58:51	I	msg:[MAIN] PID: 20481
+2011-09-21 17:58:51	I	msg:[MAIN] Loaded config from sc_trans_dj.conf
+2011-09-21 17:58:51	I	msg:[MAIN] TimeMultiplier = 1, TimeShift = 0
+2011-09-21 17:58:51	I	msg:[CALENDARMGR] Adding DJ event: m_djName=dj  m_archive=1  m_id=1 m_startDate=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_endDate=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_duration=0 m_timeOffset=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_hasStartDate=0 m_hasEndDate=0 m_hasDuration=0 m_hasTimeOffset=0 m_repeat=0
+2011-09-21 17:58:51	I	msg:[VUPUSH] 101 VU images loaded for left channel
+2011-09-21 17:58:51	I	msg:[VUPUSH] 101 VU images loaded for right channel
+2011-09-21 17:58:51	I	msg:[PLAYLISTMGR] Playlist load from file playlists/main.lst
+2011-09-21 17:58:51	I	msg:[PLAYLISTMGR] Caching playlist playlists/main.lst
+2011-09-21 17:58:51	I	msg:[PLAYLISTMGR] Load complete
+2011-09-21 17:58:51	I	msg:[MAIN] Streaming thread starting
+2011-09-21 17:58:51	I	msg:[SOURCERELAY] Thread starting
+2011-09-21 17:58:51	I	msg:[RESAMPLER] Deactivated 44100/2 == 44100/2
+2011-09-21 17:58:51	I	msg:[SOURCEANDENDPOINTMANAGER] Encoder thread 1 starting
+2011-09-21 17:58:51	I	msg:[SOURCEANDENDPOINTMANAGER] Broadcast thread 1 starting
+2011-09-21 17:58:51	I	msg:[MAIN] Playlist decoder thread starting
+2011-09-21 17:58:51	I	msg:[RGCALC] Thread running
+2011-09-21 17:58:51	I	msg:[MICROSERVER] Listening for connection on port 8505
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Giving replay gain calculator a head start
+2011-09-21 17:58:51	I	msg:[DECODE] Giving replay gain calculator a head start
+2011-09-21 17:58:51	I	msg:[DECODE] Begin decoding
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Running
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Creating stream socket
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Connecting to stream host
+2011-09-21 17:58:51	I	msg:[MAIN] SHOUTcast 2 receiver thread starting
+2011-09-21 17:58:51	I	msg:[MICROSERVER] Listening for connection on port 8501
+2011-09-21 17:58:51	I	msg:[MAIN] Broadcast Receiver thread starting
+2011-09-21 17:58:51	I	msg:[AAC] AAC setup complete
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Sending Ultravox 2.1 authentication
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Mime type
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Broadcast setup
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Negotiating buffer sizes
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Negotiated buffer size is 140KB
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Negotiating payload sizes
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Negotiated payload size is 16377
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Configuring ICY-NAME [Jonny two ninety]
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Configuring ICY-GENRE [Misc]
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Configuring ICY-URL [http://www.cattes.us/]
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Configuring ICY-PUB [0]
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Flush metadata
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Standby
+2011-09-21 17:58:51	I	msg:[UVOX2] 1709599975 Streaming
+2011-09-21 17:58:52	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 17:58:52	W	msg:[MP3 DECODE] 31249180 Could not calculate file length
+2011-09-21 17:58:52	W	msg:[MP3 DECODE] 109412044 Could not calculate file length
+2011-09-21 17:58:52	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 17:58:52	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [209 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+</extension>
+</metadata>
+
+2011-09-21 18:02:49	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:02:49	W	msg:[MP3 DECODE] 395725858 Could not calculate file length
+2011-09-21 18:02:49	W	msg:[MP3 DECODE] 1193446760 Could not calculate file length
+2011-09-21 18:02:49	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:03:24	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:07:21	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:07:21	W	msg:[MP3 DECODE] 1207212536 Could not calculate file length
+2011-09-21 18:07:21	W	msg:[MP3 DECODE] 911590944 Could not calculate file length
+2011-09-21 18:07:21	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:07:57	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:11:54	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:11:54	W	msg:[MP3 DECODE] 1430595360 Could not calculate file length
+2011-09-21 18:11:54	W	msg:[MP3 DECODE] 1634390147 Could not calculate file length
+2011-09-21 18:11:54	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:12:30	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:16:35	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:16:35	W	msg:[MP3 DECODE] 205383456 Could not calculate file length
+2011-09-21 18:16:35	W	msg:[MP3 DECODE] 1816510546 Could not calculate file length
+2011-09-21 18:16:35	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:17:03	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:21:00	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:21:00	W	msg:[MP3 DECODE] 998013173 Could not calculate file length
+2011-09-21 18:21:00	W	msg:[MP3 DECODE] 481772630 Could not calculate file length
+2011-09-21 18:21:00	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:21:36	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:25:33	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:25:33	W	msg:[MP3 DECODE] 1907192391 Could not calculate file length
+2011-09-21 18:25:33	W	msg:[MP3 DECODE] 1447869444 Could not calculate file length
+2011-09-21 18:25:33	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:26:09	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:30:06	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:30:06	W	msg:[MP3 DECODE] 522474547 Could not calculate file length
+2011-09-21 18:30:06	W	msg:[MP3 DECODE] 1437543859 Could not calculate file length
+2011-09-21 18:30:06	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:30:42	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:34:40	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:34:40	W	msg:[MP3 DECODE] 810080433 Could not calculate file length
+2011-09-21 18:34:40	W	msg:[MP3 DECODE] 1948311046 Could not calculate file length
+2011-09-21 18:34:40	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:35:15	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:39:12	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:39:12	W	msg:[MP3 DECODE] 1312043897 Could not calculate file length
+2011-09-21 18:39:12	W	msg:[MP3 DECODE] 319869220 Could not calculate file length
+2011-09-21 18:39:12	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:39:48	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:43:45	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:43:45	W	msg:[MP3 DECODE] 1658168680 Could not calculate file length
+2011-09-21 18:43:45	W	msg:[MP3 DECODE] 1814771991 Could not calculate file length
+2011-09-21 18:43:45	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:44:21	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:48:17	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:48:17	W	msg:[MP3 DECODE] 73305766 Could not calculate file length
+2011-09-21 18:48:17	W	msg:[MP3 DECODE] 296861140 Could not calculate file length
+2011-09-21 18:48:17	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:48:53	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:52:50	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:52:50	W	msg:[MP3 DECODE] 121662563 Could not calculate file length
+2011-09-21 18:52:50	W	msg:[MP3 DECODE] 1671642707 Could not calculate file length
+2011-09-21 18:52:50	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:53:26	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 18:57:23	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 18:57:23	W	msg:[MP3 DECODE] 1576206670 Could not calculate file length
+2011-09-21 18:57:23	W	msg:[MP3 DECODE] 1520360643 Could not calculate file length
+2011-09-21 18:57:23	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 18:57:59	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:01:57	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:01:57	W	msg:[MP3 DECODE] 1640605751 Could not calculate file length
+2011-09-21 19:01:57	W	msg:[MP3 DECODE] 189703039 Could not calculate file length
+2011-09-21 19:01:57	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:02:32	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:06:29	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:06:29	W	msg:[MP3 DECODE] 1082476971 Could not calculate file length
+2011-09-21 19:06:29	W	msg:[MP3 DECODE] 1671854931 Could not calculate file length
+2011-09-21 19:06:29	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:07:05	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:11:05	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:11:05	W	msg:[MP3 DECODE] 299115083 Could not calculate file length
+2011-09-21 19:11:05	W	msg:[MP3 DECODE] 1478202829 Could not calculate file length
+2011-09-21 19:11:05	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:11:39	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:15:35	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:15:35	W	msg:[MP3 DECODE] 717818044 Could not calculate file length
+2011-09-21 19:15:35	W	msg:[MP3 DECODE] 1506327620 Could not calculate file length
+2011-09-21 19:15:35	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:16:11	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:20:08	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:20:08	W	msg:[MP3 DECODE] 242310125 Could not calculate file length
+2011-09-21 19:20:08	W	msg:[MP3 DECODE] 929756 Could not calculate file length
+2011-09-21 19:20:08	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:20:44	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:24:41	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:24:41	W	msg:[MP3 DECODE] 993234119 Could not calculate file length
+2011-09-21 19:24:41	W	msg:[MP3 DECODE] 447693581 Could not calculate file length
+2011-09-21 19:24:41	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:25:17	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:29:14	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:29:14	W	msg:[MP3 DECODE] 1817440302 Could not calculate file length
+2011-09-21 19:29:14	W	msg:[MP3 DECODE] 1991247292 Could not calculate file length
+2011-09-21 19:29:14	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:29:50	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:33:47	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:33:47	W	msg:[MP3 DECODE] 929466212 Could not calculate file length
+2011-09-21 19:33:47	W	msg:[MP3 DECODE] 1577149045 Could not calculate file length
+2011-09-21 19:33:47	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:34:23	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:38:24	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:38:24	W	msg:[MP3 DECODE] 1291633089 Could not calculate file length
+2011-09-21 19:38:24	W	msg:[MP3 DECODE] 1451940759 Could not calculate file length
+2011-09-21 19:38:24	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:38:56	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:42:53	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:42:53	W	msg:[MP3 DECODE] 867209256 Could not calculate file length
+2011-09-21 19:42:53	W	msg:[MP3 DECODE] 2101713522 Could not calculate file length
+2011-09-21 19:42:53	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:43:28	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:47:26	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:47:26	W	msg:[MP3 DECODE] 1252768157 Could not calculate file length
+2011-09-21 19:47:26	W	msg:[MP3 DECODE] 31769505 Could not calculate file length
+2011-09-21 19:47:26	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:48:02	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:51:59	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:51:59	W	msg:[MP3 DECODE] 274099094 Could not calculate file length
+2011-09-21 19:51:59	W	msg:[MP3 DECODE] 763453190 Could not calculate file length
+2011-09-21 19:51:59	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:52:35	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 19:56:32	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 19:56:32	W	msg:[MP3 DECODE] 1846541497 Could not calculate file length
+2011-09-21 19:56:32	W	msg:[MP3 DECODE] 347404861 Could not calculate file length
+2011-09-21 19:56:32	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 19:57:08	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 20:01:05	I	msg:[DECODE] Next file is /home/alan/Music/uploads/06_New_Day.mp3
+2011-09-21 20:01:05	W	msg:[MP3 DECODE] 1060314330 Could not calculate file length
+2011-09-21 20:01:05	W	msg:[MP3 DECODE] 1968204060 Could not calculate file length
+2011-09-21 20:01:05	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 20:01:41	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 20:04:16	I	msg:[DJMGR] No DJ currently active. Run permission granted for `dj'
+2011-09-21 20:04:16	I	msg:[DJPROTOCOLSHOUTCAST] Connected
+2011-09-21 20:04:17	I	msg:[BROADCASTSTALLMANAGER] Timed content set to TRUE
+2011-09-21 20:04:18	I	msg:[TITLEUPDATE] Receiving DJ metadata "DJ Mike Llama - Llama Whippin' Intro"
+2011-09-21 20:04:18	I	msg:[TITLEUPDATE] Relaying DJ metadata
+2011-09-21 20:04:53	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [118 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>DJ Mike Llama - Llama Whippin&apos; Intro</TIT2>
+</metadata>
+
+2011-09-21 20:31:36	E	msg:[DJPROTOCOLSHOUTCAST] Source dropped connection. Disconnecting.
+2011-09-21 20:31:36	I	msg:[DJMGR] DJ `dj' is done.
+2011-09-21 20:31:36	I	msg:[BROADCASTSTALLMANAGER] Timed content set to FALSE
+2011-09-21 20:31:37	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [261 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>06_New_Day</TIT2>
+<extension>
+	<title seq="1">06_New_Day</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 20:31:49	I	msg:[DECODE] Next file is /home/alan/Music/uploads/08_Welcome_To_The_Jungle.mp3
+2011-09-21 20:31:49	W	msg:[MP3 DECODE] 489037352 Could not calculate file length
+2011-09-21 20:31:49	W	msg:[MP3 DECODE] 1341081055 Could not calculate file length
+2011-09-21 20:31:49	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 20:31:49	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [289 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>08_Welcome_To_The_Jungle</TIT2>
+<extension>
+	<title seq="1">08_Welcome_To_The_Jungle</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 20:34:06	I	msg:[DECODE] Next file is /home/alan/Music/uploads/13_Illest_Motherf_ker_Alive.mp3
+2011-09-21 20:34:06	W	msg:[MP3 DECODE] 1512169671 Could not calculate file length
+2011-09-21 20:34:06	W	msg:[MP3 DECODE] 678740391 Could not calculate file length
+2011-09-21 20:34:06	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 20:34:42	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [295 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>13_Illest_Motherf_ker_Alive</TIT2>
+<extension>
+	<title seq="1">13_Illest_Motherf_ker_Alive</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 20:42:29	I	msg:[DECODE] Next file is /home/alan/Music/uploads/08_Welcome_To_The_Jungle.mp3
+2011-09-21 20:42:29	W	msg:[MP3 DECODE] 276074378 Could not calculate file length
+2011-09-21 20:42:29	W	msg:[MP3 DECODE] 1036540955 Could not calculate file length
+2011-09-21 20:42:29	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 20:43:05	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [289 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>08_Welcome_To_The_Jungle</TIT2>
+<extension>
+	<title seq="1">08_Welcome_To_The_Jungle</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 20:45:23	I	msg:[DECODE] Next file is /home/alan/Music/uploads/08_Welcome_To_The_Jungle.mp3
+2011-09-21 20:45:23	W	msg:[MP3 DECODE] 977855475 Could not calculate file length
+2011-09-21 20:45:23	W	msg:[MP3 DECODE] 1754277208 Could not calculate file length
+2011-09-21 20:45:23	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 20:45:59	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [289 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>08_Welcome_To_The_Jungle</TIT2>
+<extension>
+	<title seq="1">08_Welcome_To_The_Jungle</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 20:48:18	I	msg:[DECODE] Next file is /home/alan/Music/uploads/08_Welcome_To_The_Jungle.mp3
+2011-09-21 20:48:18	W	msg:[MP3 DECODE] 1754358999 Could not calculate file length
+2011-09-21 20:48:18	W	msg:[MP3 DECODE] 336699447 Could not calculate file length
+2011-09-21 20:48:18	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 20:48:54	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [289 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>08_Welcome_To_The_Jungle</TIT2>
+<extension>
+	<title seq="1">08_Welcome_To_The_Jungle</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 20:51:12	I	msg:[DECODE] Next file is /home/alan/Music/uploads/13_Illest_Motherf_ker_Alive.mp3
+2011-09-21 20:51:12	W	msg:[MP3 DECODE] 1996587333 Could not calculate file length
+2011-09-21 20:51:12	W	msg:[MP3 DECODE] 1755288755 Could not calculate file length
+2011-09-21 20:51:12	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+2011-09-21 20:51:48	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [295 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>13_Illest_Motherf_ker_Alive</TIT2>
+<extension>
+	<title seq="1">13_Illest_Motherf_ker_Alive</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 20:55:03	I	msg:[DJMGR] No DJ currently active. Run permission granted for `dj'
+2011-09-21 20:55:03	I	msg:[DJPROTOCOLSHOUTCAST] Connected
+2011-09-21 20:55:04	I	msg:[BROADCASTSTALLMANAGER] Timed content set to TRUE
+2011-09-21 20:55:04	I	msg:[TITLEUPDATE] Receiving DJ metadata "DJ Mike Llama - Llama Whippin' Intro"
+2011-09-21 20:55:04	I	msg:[TITLEUPDATE] Relaying DJ metadata
+2011-09-21 20:55:42	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [118 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>DJ Mike Llama - Llama Whippin&apos; Intro</TIT2>
+</metadata>
+
+2011-09-21 20:55:43	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [118 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>DJ Mike Llama - Llama Whippin&apos; Intro</TIT2>
+</metadata>
+
+2011-09-21 21:05:28	E	msg:[DJPROTOCOLSHOUTCAST] Source dropped connection. Disconnecting.
+2011-09-21 21:05:28	I	msg:[DJMGR] DJ `dj' is done.
+2011-09-21 21:05:28	I	msg:[BROADCASTSTALLMANAGER] Timed content set to FALSE
+2011-09-21 21:05:29	I	msg:[UVOX2] 1709599975 Sending metadata 3902 [295 bytes] content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TIT2>13_Illest_Motherf_ker_Alive</TIT2>
+<extension>
+	<title seq="1">13_Illest_Motherf_ker_Alive</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-21 21:06:11	E	msg:[UVOX2] 1709599975 [UVOX2] 1709599975 socket send error.
+2011-09-21 21:06:11	E	msg:[UVOX2] 1709599975 Waiting 30 seconds
+2011-09-21 21:06:22	I	msg:[MAIN] Exiting loop
+2011-09-21 21:06:22	I	msg:[AAC] Exiting encoder thread
+2011-09-21 21:06:22	I	msg:[DECODE] Exiting decoder thread
+2011-09-21 21:06:23	I	msg:[RGCALC] Thread exiting
+2011-09-21 21:06:23	I	msg:[RESAMPLER] tIn=11281.4 tOut=11281.4 bIn=1990033920 bOut=1990033920
+2011-09-21 21:06:23	I	msg:[CROSSFADER] in=11281.4 out=11276.4
+2011-09-21 21:06:23	I	msg:<***>	Logger shutdown

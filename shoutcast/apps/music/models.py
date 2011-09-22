@@ -24,11 +24,9 @@ class Song(models.Model):
     title = models.CharField(max_length=420)
     title_slug = models.SlugField()
     bitrate = models.PositiveIntegerField()
-    url = models.CharField(max_length=420)
     artist = models.ForeignKey("Artist", blank=True, null=True)
     album = models.ForeignKey("Album", blank=True, null=True)
     genre = models.ForeignKey("Genre", blank=True, null=True)
-    user = models.ForeignKey(User)
 
     def __unicode__(self):
         return u'%s' % self.title
@@ -41,7 +39,6 @@ class Song(models.Model):
 class Upload(models.Model):
     song_file = models.FileField(storage=fs, upload_to="uploads/", max_length=100)
     user = models.ForeignKey(User)
-
     def __unicode__(self):
         return u'%s' % self.song_file
 
@@ -142,11 +139,9 @@ def upload_to_song(sender, instance, created, **kwargs):
         song.length = song_length
         song.title = song_title
         song.bitrate = song_bitrate
-        song.url = instance.song_file.url
         song.artist = artist
         song.album = album
         song.genre = genre
-        song.user = instance.user
         song.file_name = os.path.basename(instance.song_file.name)
 
         song.save()
