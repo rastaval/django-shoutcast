@@ -11,6 +11,4 @@ mutagen
 pyechonest
 slumber
 django-tastypie
-pyechonest
 lxml
-mutagen
