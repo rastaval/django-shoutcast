@@ -5,7 +5,7 @@
 # ensure that the files you want to play are present in the location you choose
 # e.g.
 
-#!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
+#!/home/webapps/.virtualenvs/shoutcast/bin/python /home/webapps/websites/django-shoutcast/shoutcast/manage.py queue
 
 #
 # In this example we will just assume that all of the files associated to the

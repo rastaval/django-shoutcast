@@ -1,259 +1,83 @@
-2011-09-21 21:06:13	I	msg:<***>	Logger startup
-2011-09-21 21:06:13	I	msg:<***>	version 2.0.0.29
-2011-09-21 21:06:13	D	msg:<***>	
-2011-09-21 21:06:13	I	msg:***************************************************************
-2011-09-21 21:06:13	I	msg:** SHOUTcast Distributed Network Audio Server (DNAS)
-2011-09-21 21:06:13	I	msg:** Copyright (C) 1999-2011 Nullsoft, Inc.  All Rights Reserved.
-2011-09-21 21:06:13	I	msg:** Use "sc_serv filename.conf" to specify a config file.
-2011-09-21 21:06:13	I	msg:***************************************************************
-2011-09-21 21:06:13	I	msg:[SHOUTcast] DNAS/posix(linux x86) v2.0.0.29 (Jul 31 2011) starting up...
-2011-09-21 21:06:13	I	msg:[MAIN] PID: 25933
-2011-09-21 21:06:13	I	msg:[MAIN] Loaded config from sc_serv.conf
-2011-09-21 21:06:13	I	msg:[MAIN] Calculated CPU count is 4
-2011-09-21 21:06:13	I	msg:[MAIN] Starting 4 network threads
-2011-09-21 21:06:13	I	msg:[MICROSERVER] Listening for connection on port 8000
-2011-09-21 21:06:13	I	msg:[MICROSERVER] Listening for connection on port 8001
-2011-09-21 21:06:24	I	msg:[SRC 127.0.0.1:60649] SHOUTcast 2 source connection.
-2011-09-21 21:06:24	I	msg:[SRC 127.0.0.1:60649] Password accepted. Stream id is 1
-2011-09-21 21:06:24	I	msg:[SRC 127.0.0.1:60649 sid=1] stream configuration complete. [
+2011-09-22 18:34:55	I	msg:<***>	Logger startup
+2011-09-22 18:34:55	I	msg:<***>	version 2.0.0.29
+2011-09-22 18:34:55	D	msg:<***>	
+2011-09-22 18:34:55	I	msg:***************************************************************
+2011-09-22 18:34:55	I	msg:** SHOUTcast Distributed Network Audio Server (DNAS)
+2011-09-22 18:34:55	I	msg:** Copyright (C) 1999-2011 Nullsoft, Inc.  All Rights Reserved.
+2011-09-22 18:34:55	I	msg:** Use "sc_serv filename.conf" to specify a config file.
+2011-09-22 18:34:55	I	msg:***************************************************************
+2011-09-22 18:34:55	I	msg:[SHOUTcast] DNAS/posix(linux x86) v2.0.0.29 (Jul 31 2011) starting up...
+2011-09-22 18:34:55	I	msg:[MAIN] PID: 30311
+2011-09-22 18:34:55	I	msg:[MAIN] Loaded config from sc_serv.conf
+2011-09-22 18:34:55	I	msg:[MAIN] Calculated CPU count is 1
+2011-09-22 18:34:55	I	msg:[MAIN] Starting 1 network threads
+2011-09-22 18:34:55	I	msg:[MICROSERVER] Listening for connection on port 9021
+2011-09-22 18:34:55	I	msg:[MICROSERVER] Listening for connection on port 9022
+2011-09-22 18:36:35	I	msg:[SRC 127.0.0.1:45962] SHOUTcast 2 source connection.
+2011-09-22 18:36:35	I	msg:[SRC 127.0.0.1:45962] Password accepted. Stream id is 1
+2011-09-22 18:36:35	I	msg:[SRC 127.0.0.1:45962 sid=1] stream configuration complete. [
 type=SHOUTcast 2
 mimeType=audio/aacp
 maxPayloadSize=16377
-avgBitrate=56000
-maxBitrate=56000
-desiredBufferSize=140
+avgBitrate=192000
+maxBitrate=192000
+desiredBufferSize=480
 minimumBufferSize=0
 icyName=Jonny two ninety
 icyGenre=Misc
 icyURL=http://www.cattes.us/
 icyPub=0
 ]
-2011-09-21 21:06:25	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [257 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>12_Why_I_Love_You_feat__Mr__Hudson</TIT2>
-<extension>
-	<title seq="1">12_Why_I_Love_You_feat__Mr__Hudson</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-</extension>
-</metadata>
-
-2011-09-21 21:09:45	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [293 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>08_Welcome_To_The_Jungle_1</TIT2>
-<extension>
-	<title seq="1">08_Welcome_To_The_Jungle_1</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:12:39	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [309 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>12_Why_I_Love_You_feat__Mr__Hudson</TIT2>
-<extension>
-	<title seq="1">12_Why_I_Love_You_feat__Mr__Hudson</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:16:01	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [293 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>08_Welcome_To_The_Jungle_1</TIT2>
-<extension>
-	<title seq="1">08_Welcome_To_The_Jungle_1</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:18:55	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [265 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>15_Primetime</TIT2>
-<extension>
-	<title seq="1">15_Primetime</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:22:14	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [293 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>08_Welcome_To_The_Jungle_1</TIT2>
-<extension>
-	<title seq="1">08_Welcome_To_The_Jungle_1</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:25:08	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [293 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>08_Welcome_To_The_Jungle_1</TIT2>
-<extension>
-	<title seq="1">08_Welcome_To_The_Jungle_1</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:28:03	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [293 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>08_Welcome_To_The_Jungle_1</TIT2>
-<extension>
-	<title seq="1">08_Welcome_To_The_Jungle_1</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:30:57	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [293 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>08_Welcome_To_The_Jungle_1</TIT2>
-<extension>
-	<title seq="1">08_Welcome_To_The_Jungle_1</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:33:51	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [265 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>15_Primetime</TIT2>
-<extension>
-	<title seq="1">15_Primetime</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:37:10	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [265 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>15_Primetime</TIT2>
-<extension>
-	<title seq="1">15_Primetime</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:40:30	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [293 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>08_Welcome_To_The_Jungle_1</TIT2>
-<extension>
-	<title seq="1">08_Welcome_To_The_Jungle_1</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:43:24	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [309 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>12_Why_I_Love_You_feat__Mr__Hudson</TIT2>
-<extension>
-	<title seq="1">12_Why_I_Love_You_feat__Mr__Hudson</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:46:45	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [265 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>15_Primetime</TIT2>
-<extension>
-	<title seq="1">15_Primetime</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:50:04	I	msg:[SRC 127.0.0.1:60649 sid=1] Got complete metadata message type=3902 [293 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>08_Welcome_To_The_Jungle_1</TIT2>
-<extension>
-	<title seq="1">08_Welcome_To_The_Jungle_1</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-21 21:53:29	E	msg:[SRC 127.0.0.1:60649 sid=1] Timeout waiting for data (1316667209 1316667179[30] )
-2011-09-21 22:37:55	I	msg:[SRC 127.0.0.1:47010] SHOUTcast 2 source connection.
-2011-09-21 22:37:55	I	msg:[SRC 127.0.0.1:47010] Password accepted. Stream id is 1
-2011-09-21 22:37:55	I	msg:[SRC 127.0.0.1:47010 sid=1] stream configuration complete. [
+2011-09-22 18:36:46	E	msg:[SRC 127.0.0.1:45962 sid=1] Remote socket closed while waiting for data
+2011-09-22 18:38:09	I	msg:[SRC 127.0.0.1:45963] SHOUTcast 2 source connection.
+2011-09-22 18:38:09	I	msg:[SRC 127.0.0.1:45963] Password accepted. Stream id is 1
+2011-09-22 18:38:09	I	msg:[SRC 127.0.0.1:45963 sid=1] stream configuration complete. [
 type=SHOUTcast 2
 mimeType=audio/aacp
 maxPayloadSize=16377
-avgBitrate=56000
-maxBitrate=56000
-desiredBufferSize=140
+avgBitrate=192000
+maxBitrate=192000
+desiredBufferSize=480
 minimumBufferSize=0
 icyName=Jonny two ninety
 icyGenre=Misc
 icyURL=http://www.cattes.us/
 icyPub=0
 ]
-2011-09-21 22:37:57	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [225 bytes] id=1 span=1 content=
+2011-09-22 18:38:14	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [432 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<COMM></COMM>
+<TALB>Nevermind (Limited Super Delux</TALB>
+<TCON v1="6"></TCON>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>On A Plain (The Devonshire Mix</TIT2>
+<TPE1>Nirvana</TPE1>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - On A Plain (The Devonshire Mix</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 </extension>
 </metadata>
 
-2011-09-21 22:42:12	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 18:41:36	E	msg:[SRC 24.7.162.146:46778] Remote socket closed while waiting for data
+2011-09-22 18:41:36	E	msg:[SRC 24.7.162.146:46779] Remote socket closed while waiting for data
+2011-09-22 18:41:39	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [598 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Courtship Dating</TIT2>
+<TLEN>210453</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>07</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Crystal Castles - Courtship Dating</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -261,12 +85,23 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 22:46:38	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 18:41:42	I	msg:[DST 24.7.162.146:46796 sid=1] SHOUTcast 1 client connection accepted. 
+2011-09-22 18:41:42	I	msg:[SRC 24.7.162.146:46797 sid=1] SHOUTcast 1 source connection.
+2011-09-22 18:41:42	E	msg:[SRC 24.7.162.146:46797 sid=1] connection denied. Bad password.
+2011-09-22 18:45:09	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [556 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 2]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Polly (Smart Sessions)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">2</TPOS>
+<TRCK total="18">4</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Polly (Smart Sessions)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -274,12 +109,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 22:50:55	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 18:48:06	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [527 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 4]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Lithium</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">4</TPOS>
+<TRCK total="19">12</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Lithium</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -287,12 +130,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 22:55:12	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 18:52:43	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [612 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Tell Me What to Swallow</TIT2>
+<TLEN>136853</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>16</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Crystal Castles - Tell Me What to Swallow</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -300,12 +152,19 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 22:59:38	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 18:54:57	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [555 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Pearl Jam Twenty [Disc 1 - From the Film &apos;PJ20&apos;]</TALB>
+<TCON>Alternative</TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Release (Verona, Italy 9-16-06)</TIT2>
+<TPE1>Pearl Jam</TPE1>
+<TRCK>01</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Pearl Jam - Release (Verona, Italy 9-16-06)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -313,12 +172,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:04:04	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 18:58:51	I	msg:[DST 98.114.60.148:59431 sid=1] SHOUTcast 1 client connection accepted. iTunes/10.4.1 (Macintosh; Intel Mac OS X 10.7.1) AppleWebKit/534.48.3
+2011-09-22 18:59:43	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [579 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Pearl Jam Twenty [Disc 1 - From the Film &apos;PJ20&apos;]</TALB>
+<TCON>Alternative</TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Thumbing My Way (Chop Suey, Seattle 9-6-02)</TIT2>
+<TPE1>Pearl Jam</TPE1>
+<TRCK>10</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Pearl Jam - Thumbing My Way (Chop Suey, Seattle 9-6-02)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -326,12 +193,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:08:21	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 19:04:05	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [582 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Vanished</TIT2>
+<TLEN>242960</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>10</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Crystal Castles - Vanished</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -339,12 +215,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:12:38	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 19:08:07	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [521 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 4]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Blew</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">4</TPOS>
+<TRCK total="19">16</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Blew</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -352,12 +236,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:16:55	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 19:12:16	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [574 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Come As You Are</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">3</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Nirvana - Come As You Are</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -365,12 +258,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:21:21	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 19:15:45	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [598 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 3]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Territorial Pissings (The Devonshire Mixes)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">3</TPOS>
+<TRCK total="11">6</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Nirvana - Territorial Pissings (The Devonshire Mixes)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -378,12 +279,23 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:25:48	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 19:17:10	E	msg:[DST 98.114.60.148:59431 sid=1] Socket error while waiting to send data. err=Broken pipe(32)
+2011-09-22 19:17:10	I	msg:[DST 98.114.60.148:59431 sid=1] SHOUTcast 1 client connection closed (1099 seconds) [Bytes: 26627184] Agent: `iTunes/10.4.1 (Macintosh; Intel Mac OS X 10.7.1) AppleWebKit/534.48.3'
+2011-09-22 19:17:58	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [579 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Aneurysm [B-Side]</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">15</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Aneurysm [B-Side]</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -391,12 +303,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:30:04	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 19:22:43	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [580 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Knights</TIT2>
+<TLEN>193706</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>11</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Crystal Castles - Knights</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -404,12 +325,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:34:31	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 19:25:56	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [574 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Come As You Are</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">3</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Nirvana - Come As You Are</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -417,12 +347,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:38:57	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
+2011-09-22 19:29:25	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [598 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>14_HAM</TIT2>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Courtship Dating</TIT2>
+<TLEN>210453</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>07</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
 <extension>
-	<title seq="1">14_HAM</title>
+	<title seq="1">Crystal Castles - Courtship Dating</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -430,12 +369,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:43:33	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
+2011-09-22 19:32:55	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [580 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>14_HAM</TIT2>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Knights</TIT2>
+<TLEN>193706</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>11</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
 <extension>
-	<title seq="1">14_HAM</title>
+	<title seq="1">Crystal Castles - Knights</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -443,12 +391,19 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:48:09	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 19:36:07	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [571 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Pearl Jam Twenty [Disc 1 - From the Film &apos;PJ20&apos;]</TALB>
+<TCON>Alternative</TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Alive (Moore Theatre, Seattle 12-22-90)</TIT2>
+<TPE1>Pearl Jam</TPE1>
+<TRCK>02</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Pearl Jam - Alive (Moore Theatre, Seattle 12-22-90)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -456,12 +411,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:52:25	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 19:40:54	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [598 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 3]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Territorial Pissings (The Devonshire Mixes)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">3</TPOS>
+<TRCK total="11">6</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Nirvana - Territorial Pissings (The Devonshire Mixes)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -469,12 +432,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-21 23:56:52	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 19:43:07	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [522 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 4]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Polly</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">4</TPOS>
+<TRCK total="19">8</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Polly</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -482,12 +453,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:01:09	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 19:46:09	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [590 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Smells Like Teen Spirit</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">1</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Smells Like Teen Spirit</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -495,12 +475,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:05:25	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 19:51:08	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [571 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Sliver [Live]</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">21</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Sliver [Live]</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -508,12 +497,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:09:42	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
+2011-09-22 19:53:11	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [582 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>14_HAM</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 2]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Here She Comes Now (Smart Sessions)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">2</TPOS>
+<TRCK total="18">6</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">14_HAM</title>
+	<title seq="1">Nirvana - Here She Comes Now (Smart Sessions)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -521,12 +518,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:14:18	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 19:58:09	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [640 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Crimewave (Crystal Castles VS HEALTH)</TIT2>
+<TLEN>258453</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>03</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Crystal Castles - Crimewave (Crystal Castles VS HEALTH)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -534,12 +540,19 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:18:35	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 20:02:27	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [615 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Pearl Jam Twenty [Disc 1 - From the Film &apos;PJ20&apos;]</TALB>
+<TCON>Alternative</TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Just Breathe (SNL, Rockefeller Center, New York City 3-13-10)</TIT2>
+<TPE1>Pearl Jam</TPE1>
+<TRCK>14</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Pearl Jam - Just Breathe (SNL, Rockefeller Center, New York City 3-13-10)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -547,12 +560,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:23:01	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 20:06:07	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [544 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 4]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Floyd The Barber</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">4</TPOS>
+<TRCK total="19">5</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Floyd The Barber</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -560,12 +581,18 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:27:18	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
+2011-09-22 20:08:33	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [440 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>14_HAM</TIT2>
+<COMM></COMM>
+<TALB>Nevermind (Limited Super Delux</TALB>
+<TCON v1="6"></TCON>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>In Bloom</TIT2>
+<TPE1>Nirvana</TPE1>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">14_HAM</title>
+	<title seq="1">Nirvana - In Bloom</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -573,12 +600,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:31:54	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 20:12:47	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [582 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 2]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Here She Comes Now (Smart Sessions)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">2</TPOS>
+<TRCK total="18">6</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Here She Comes Now (Smart Sessions)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -586,12 +621,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:36:10	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
+2011-09-22 20:17:46	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [587 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>14_HAM</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>D-7 [Live at the BBC]</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">17</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">14_HAM</title>
+	<title seq="1">Nirvana - D-7 [Live at the BBC]</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -599,12 +643,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:40:46	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 20:21:29	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [522 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 4]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Polly</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">4</TPOS>
+<TRCK total="19">8</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Polly</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -612,12 +664,20 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:45:03	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 20:24:33	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [568 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 2]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Pay To Play (Smart Sessions)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">2</TPOS>
+<TRCK total="18">5</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Pay To Play (Smart Sessions)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -625,12 +685,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:49:20	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 20:27:59	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [579 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Aneurysm [B-Side]</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">15</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Nirvana - Aneurysm [B-Side]</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -638,12 +707,25 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:53:46	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 20:30:30	E	msg:[DST 24.7.162.146:46796 sid=1] Socket error while waiting to send data. err=Connection reset by peer(104)
+2011-09-22 20:30:30	I	msg:[DST 24.7.162.146:46796 sid=1] SHOUTcast 1 client connection closed (6528 seconds) [Bytes: 156923424] Agent: `'
+2011-09-22 20:30:38	I	msg:[DST 24.7.162.146:35585 sid=1] SHOUTcast 1 client connection accepted. 
+2011-09-22 20:30:38	I	msg:[SRC 24.7.162.146:35586 sid=1] SHOUTcast 1 source connection.
+2011-09-22 20:30:38	E	msg:[SRC 24.7.162.146:35586 sid=1] connection denied. Bad password.
+2011-09-22 20:32:44	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [524 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 4]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>School</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">4</TPOS>
+<TRCK total="19">4</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - School</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -651,12 +733,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 00:58:03	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
+2011-09-22 20:35:29	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [579 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>14_HAM</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Aneurysm [B-Side]</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">15</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">14_HAM</title>
+	<title seq="1">Nirvana - Aneurysm [B-Side]</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -664,12 +755,18 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 01:02:39	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
+2011-09-22 20:40:14	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [440 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>14_HAM</TIT2>
+<COMM></COMM>
+<TALB>Nevermind (Limited Super Delux</TALB>
+<TCON v1="6"></TCON>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>In Bloom</TIT2>
+<TPE1>Nirvana</TPE1>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">14_HAM</title>
+	<title seq="1">Nirvana - In Bloom</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -677,12 +774,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 01:07:15	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 20:43:34	I	msg:[DST 68.190.40.204:60195 sid=1] SHOUTcast 1 client connection accepted. iTunes/10.4 (Macintosh; Intel Mac OS X 10.7) AppleWebKit/534.48.3
+2011-09-22 20:44:28	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [592 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 4]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Jesus Doesn&apos;t Want Me For A Sunbeam</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">4</TPOS>
+<TRCK total="19">1</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Jesus Doesn&apos;t Want Me For A Sunbeam</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -690,12 +796,25 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 01:11:31	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 20:44:35	E	msg:[DST 68.190.40.204:60195 sid=1] Socket error while waiting to send data. err=Broken pipe(32)
+2011-09-22 20:44:35	I	msg:[DST 68.190.40.204:60195 sid=1] SHOUTcast 1 client connection closed (61 seconds) [Bytes: 1730808] Agent: `iTunes/10.4 (Macintosh; Intel Mac OS X 10.7) AppleWebKit/534.48.3'
+2011-09-22 20:44:54	I	msg:[DST 70.59.113.224:55329 sid=1] SHOUTcast 1 client connection accepted. GStreamer souphttpsrc libsoup/2.34.0
+2011-09-22 20:45:30	E	msg:[SRC 123.198.2.37:45800] Remote socket closed while waiting for data
+2011-09-22 20:45:49	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [582 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Vanished</TIT2>
+<TLEN>242960</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>10</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Crystal Castles - Vanished</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -703,12 +822,24 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 01:15:57	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 20:46:18	I	msg:[DST 123.198.2.37:48449 sid=1] SHOUTcast 1 client connection accepted. iTunes/10.4.1 (Macintosh; Intel Mac OS X 10.7.1) AppleWebKit/534.48.3
+2011-09-22 20:47:23	E	msg:[DST 123.198.2.37:48449 sid=1] Socket error while waiting to send data. err=Broken pipe(32)
+2011-09-22 20:47:23	I	msg:[DST 123.198.2.37:48449 sid=1] SHOUTcast 1 client connection closed (65 seconds) [Bytes: 1826568] Agent: `iTunes/10.4.1 (Macintosh; Intel Mac OS X 10.7.1) AppleWebKit/534.48.3'
+2011-09-22 20:49:51	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [565 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>On A Plain</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">11</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Nirvana - On A Plain</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -716,12 +847,22 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 01:20:24	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 20:52:53	I	msg:[SRC 24.7.162.146:34574 sid=1] SHOUTcast 1 source connection.
+2011-09-22 20:52:53	E	msg:[SRC 24.7.162.146:34574 sid=1] connection denied. Bad password.
+2011-09-22 20:53:04	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [522 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 4]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Polly</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">4</TPOS>
+<TRCK total="19">8</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Nirvana - Polly</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -729,1299 +870,64 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 01:24:50	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 20:53:12	I	msg:[SRC 24.7.162.146:34575 sid=1] SHOUTcast 1 source connection.
+2011-09-22 20:53:12	E	msg:[SRC 24.7.162.146:34575 sid=1] connection denied. Bad password.
+2011-09-22 20:53:13	I	msg:[SRC 24.7.162.146:34576 sid=1] SHOUTcast 1 source connection.
+2011-09-22 20:53:13	E	msg:[SRC 24.7.162.146:34576 sid=1] connection denied. Bad password.
+2011-09-22 20:53:14	I	msg:[SRC 24.7.162.146:34577 sid=1] SHOUTcast 1 source connection.
+2011-09-22 20:53:14	E	msg:[SRC 24.7.162.146:34577 sid=1] connection denied. Bad password.
+2011-09-22 20:53:14	I	msg:[SRC 24.7.162.146:34578 sid=1] SHOUTcast 1 source connection.
+2011-09-22 20:53:14	E	msg:[SRC 24.7.162.146:34578 sid=1] connection denied. Bad password.
+2011-09-22 20:53:15	I	msg:[SRC 24.7.162.146:34579 sid=1] SHOUTcast 1 source connection.
+2011-09-22 20:53:15	E	msg:[SRC 24.7.162.146:34579 sid=1] connection denied. Bad password.
+2011-09-22 20:53:16	I	msg:[SRC 24.7.162.146:34580 sid=1] SHOUTcast 1 source connection.
+2011-09-22 20:53:16	E	msg:[SRC 24.7.162.146:34580 sid=1] connection denied. Bad password.
+2011-09-22 20:53:16	I	msg:[SRC 24.7.162.146:34581 sid=1] SHOUTcast 1 source connection.
+2011-09-22 20:53:16	E	msg:[SRC 24.7.162.146:34581 sid=1] connection denied. Bad password.
+2011-09-22 20:53:25	I	msg:[SRC 24.7.162.146:35798] SHOUTcast 2 source connection.
+2011-09-22 20:53:26	E	msg:[SRC 24.7.162.146:35798] Connection denied for user (220ed13fb6e178b3) on stream 1. Bad password.
+2011-09-22 20:53:27	I	msg:[SRC 24.7.162.146:35799] SHOUTcast 2 source connection.
+2011-09-22 20:53:27	E	msg:[SRC 24.7.162.146:35799] Connection denied for user (220ed13fb6e178b3) on stream 1. Bad password.
+2011-09-22 20:53:28	I	msg:[SRC 24.7.162.146:35800] SHOUTcast 2 source connection.
+2011-09-22 20:53:29	E	msg:[SRC 24.7.162.146:35800] Connection denied for user (220ed13fb6e178b3) on stream 1. Bad password.
+2011-09-22 20:53:41	I	msg:[SRC 24.7.162.146:34585 sid=1] SHOUTcast 1 source connection.
+2011-09-22 20:53:41	E	msg:[SRC 24.7.162.146:34585 sid=1] connection denied. Bad password.
+2011-09-22 20:54:12	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [117 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 01:29:17	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 01:33:33	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 01:38:09	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 01:42:45	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 01:47:21	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 01:51:47	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 01:56:23	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:00:59	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:05:15	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:09:51	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:14:27	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:18:44	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:23:10	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:27:27	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:32:03	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:36:29	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:40:55	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:45:12	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:49:38	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:54:14	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 02:58:50	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:03:16	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:07:33	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:11:50	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:16:16	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:20:42	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:25:18	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:29:45	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:34:11	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:38:28	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:43:04	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:47:39	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:52:06	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 03:56:32	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:00:49	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:05:06	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:09:32	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:14:08	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:18:43	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:23:19	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:27:55	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:32:31	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:37:06	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:41:33	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:45:50	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:50:06	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:54:33	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 04:58:59	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:03:35	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:08:01	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:12:18	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:16:44	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:21:01	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:25:18	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:29:54	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:34:20	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:38:37	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:42:54	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:47:20	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:51:46	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 05:56:03	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:00:29	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:05:05	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:09:22	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:13:58	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:18:34	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:23:00	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:27:17	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:31:33	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:35:50	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:40:07	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:44:24	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:49:00	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:53:16	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 06:57:33	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:01:59	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:06:26	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:10:52	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:15:09	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:19:45	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:24:01	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:28:37	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:33:04	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:37:20	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:41:57	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:46:13	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:50:49	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:55:15	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 07:59:51	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 08:04:08	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 08:08:24	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 08:12:51	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 08:17:07	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 08:21:34	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 08:25:51	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
-</metadata>
-
-2011-09-22 08:30:17	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>14_HAM</TIT2>
-<extension>
-	<title seq="1">14_HAM</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
+<TIT2>JAY Z &amp; Kanye West - Ni**as In Paris</TIT2>
 </metadata>
 
-2011-09-22 08:34:53	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 20:55:22	I	msg:[DST 68.190.40.204:60491 sid=1] SHOUTcast 1 client connection accepted. iTunes/10.4 (Macintosh; Intel Mac OS X 10.7) AppleWebKit/534.48.3
+2011-09-22 20:55:23	E	msg:[DST 68.190.40.204:60491 sid=1] Socket error while waiting to send data. err=Broken pipe(32)
+2011-09-22 20:55:23	I	msg:[DST 68.190.40.204:60491 sid=1] SHOUTcast 1 client connection closed (1 seconds) [Bytes: 270336] Agent: `iTunes/10.4 (Macintosh; Intel Mac OS X 10.7) AppleWebKit/534.48.3'
+2011-09-22 20:55:24	I	msg:[DST 68.190.40.204:60492 sid=1] SHOUTcast 1 client connection accepted. iTunes/10.4 (Macintosh; Intel Mac OS X 10.7) AppleWebKit/534.48.3
+2011-09-22 20:56:44	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [126 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
+<TIT2>JAY Z &amp; Kanye West - Lift Off (feat. Beyonce)</TIT2>
 </metadata>
 
-2011-09-22 08:39:10	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 21:01:09	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [122 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
+<TIT2>JAY Z &amp; Kanye West - That&apos;s My Bitch</TIT2>
 </metadata>
 
-2011-09-22 08:43:26	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 21:03:42	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [522 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 4]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Polly</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">4</TPOS>
+<TRCK total="19">8</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Nirvana - Polly</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -2029,51 +935,45 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 08:47:53	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 21:03:47	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [122 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
+<TIT2>JAY Z &amp; Kanye West - That&apos;s My Bitch</TIT2>
 </metadata>
 
-2011-09-22 08:52:10	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 21:03:48	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [122 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
+<TIT2>JAY Z &amp; Kanye West - That&apos;s My Bitch</TIT2>
 </metadata>
 
-2011-09-22 08:56:36	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 21:04:33	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [127 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
-<extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-	<title seq="4">manage</title>
-	<soon>manage</soon>
-</extension>
+<TIT2>JAY Z &amp; Kanye West - Illest Motherf**ker Alive</TIT2>
 </metadata>
 
-2011-09-22 09:00:53	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [291 bytes] id=1 span=1 content=
+2011-09-22 21:04:50	E	msg:[DST 24.7.162.146:35585 sid=1] Socket error while waiting to send data. err=Connection reset by peer(104)
+2011-09-22 21:04:50	I	msg:[DST 24.7.162.146:35585 sid=1] SHOUTcast 1 client connection closed (2052 seconds) [Bytes: 49500744] Agent: `'
+2011-09-22 21:05:00	I	msg:[DST 24.7.162.146:41352 sid=1] SHOUTcast 1 client connection accepted. 
+2011-09-22 21:05:00	I	msg:[SRC 24.7.162.146:41353 sid=1] SHOUTcast 1 source connection.
+2011-09-22 21:05:00	E	msg:[SRC 24.7.162.146:41353 sid=1] connection denied. Bad password.
+2011-09-22 21:05:31	E	msg:[DST 68.190.40.204:60492 sid=1] Socket error while waiting to send data. err=Broken pipe(32)
+2011-09-22 21:05:31	I	msg:[DST 68.190.40.204:60492 sid=1] SHOUTcast 1 client connection closed (607 seconds) [Bytes: 14341709] Agent: `iTunes/10.4 (Macintosh; Intel Mac OS X 10.7) AppleWebKit/534.48.3'
+2011-09-22 21:05:32	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [522 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>02_Lift_Off_feat__Beyonce</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 4]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Polly</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">4</TPOS>
+<TRCK total="19">8</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce</title>
+	<title seq="1">Nirvana - Polly</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -2081,12 +981,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 09:05:19	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [253 bytes] id=1 span=1 content=
+2011-09-22 21:06:45	E	msg:[DST 70.59.113.224:55329 sid=1] Socket error while waiting to send data. err=Connection reset by peer(104)
+2011-09-22 21:06:45	I	msg:[DST 70.59.113.224:55329 sid=1] SHOUTcast 1 client connection closed (1311 seconds) [Bytes: 31738704] Agent: `GStreamer souphttpsrc libsoup/2.34.0'
+2011-09-22 21:06:56	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [563 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>14_HAM</TIT2>
+<TALB>Pearl Jam Twenty [Disc Two - Rarities and Inspiration]</TALB>
+<TCON>Alternative</TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Indifference (Bologna, Italy 9-14-06)</TIT2>
+<TPE1>Pearl Jam</TPE1>
+<TRCK>10</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">14_HAM</title>
+	<title seq="1">Pearl Jam - Indifference (Bologna, Italy 9-14-06)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -2094,12 +1003,25 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 09:09:54	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 21:07:28	I	msg:[DST 24.7.162.146:44013 sid=1] SHOUTcast 1 client connection accepted. 
+2011-09-22 21:07:28	I	msg:[SRC 24.7.162.146:44014 sid=1] SHOUTcast 1 source connection.
+2011-09-22 21:07:28	E	msg:[SRC 24.7.162.146:44014 sid=1] connection denied. Bad password.
+2011-09-22 21:07:28	E	msg:[DST 24.7.162.146:41352 sid=1] Socket error while waiting to send data. err=Connection reset by peer(104)
+2011-09-22 21:07:28	I	msg:[DST 24.7.162.146:41352 sid=1] SHOUTcast 1 client connection closed (148 seconds) [Bytes: 3813600] Agent: `'
+2011-09-22 21:11:58	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [576 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 3]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Stay Away (The Devonshire Mixes)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">3</TPOS>
+<TRCK total="11">9</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Stay Away (The Devonshire Mixes)</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -2107,12 +1029,21 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 09:14:12	I	msg:[SRC 127.0.0.1:47010 sid=1] Got complete metadata message type=3902 [277 bytes] id=1 span=1 content=
+2011-09-22 21:15:17	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [583 bytes] id=1 span=1 content=
 <?xml version="1.0" encoding="UTF-8" ?>
 <metadata>
-<TIT2>09_Who_Gon_Stop_Me</TIT2>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Curmudgeon [B-Side]</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">16</TRCK>
+<TYER>2011</TYER>
 <extension>
-	<title seq="1">09_Who_Gon_Stop_Me</title>
+	<title seq="1">Nirvana - Curmudgeon [B-Side]</title>
 	<title seq="2">manage</title>
 	<title seq="3">manage</title>
 	<title seq="4">manage</title>
@@ -2120,4 +1051,3 @@ icyPub=0
 </extension>
 </metadata>
 
-2011-09-22 09:16:44	E	msg:[SRC 127.0.0.1:47010 sid=1] Remote socket closed while waiting for data

@@ -94,7 +94,7 @@ def upload_to_song(sender, instance, created, **kwargs):
     if created:
         song_path = instance.song_file.path
 
-        song = Song()
+        #song = Song()
 
         try:
             info = SongInfo(song_path)
@@ -134,16 +134,28 @@ def upload_to_song(sender, instance, created, **kwargs):
         genre, gcreated = Genre.objects.get_or_create(genre=song_genre)
         artist, acreated = Artist.objects.get_or_create(artist=song_artist)
         album, alcreated = Album.objects.get_or_create(album=song_album)
+        
+        crap = {
+            "file_path": song_path,
+            "length": song_length,
+            "title": song_title,
+            "bitrate": song_bitrate,
+            "artist": artist,
+            "genre": genre,
+            "file_name": os.path.basename(instance.song_file.name)
+        }
 
-        song.file_path = song_path
-        song.length = song_length
-        song.title = song_title
-        song.bitrate = song_bitrate
-        song.artist = artist
-        song.album = album
-        song.genre = genre
-        song.file_name = os.path.basename(instance.song_file.name)
+        #song.file_path = song_path
+        #song.length = song_length
+        #song.title = song_title
+        #song.bitrate = song_bitrate
+        #song.artist = artist
+        #song.album = album
+        #song.genre = genre
+        #song.file_name = os.path.basename(instance.song_file.name)
+        #
+        #song.save()
 
-        song.save()
+        song, created = Song.objects.get_or_create(**crap)
 
 post_save.connect(upload_to_song, sender=Upload)

@@ -16,7 +16,7 @@ from utils.trans_api import ApiQuery
 api = ApiQuery(settings.API_URL, settings.API_USER, settings.API_PASS)
 
 def index(request):
-    rsongs = RecentTracks.objects.order_by('date')[:8]
+    rsongs = RecentTracks.objects.order_by('-date')[1:9]
 
     status = api.request(op="getstatus", seq="420")
     source = status['data']['status']['activesource']['source']
@@ -34,7 +34,7 @@ def index(request):
 
     elif track == 'dj':
         api_url = settings.API_URL
-        url = api_url.split(':7999')[0] + ":8000/stats?sid=1"
+        url = api_url.split(':7999')[0] + ":9021/stats?sid=1"
         xml_url = urllib2.urlopen(url)
         xml = xml_url.read()
         root = ElementTree.XML(xml)

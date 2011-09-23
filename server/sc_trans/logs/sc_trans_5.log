@@ -1,72 +1,61 @@
-2011-09-21 17:12:11	I	msg:<***>	Logger startup
-2011-09-21 17:12:11	I	msg:<***>	version 2.0.0.51
-2011-09-21 17:12:11	D	msg:<***>	
-2011-09-21 17:12:11	I	msg:***************************************************************
-2011-09-21 17:12:11	I	msg:** TRANScast Distributed Network Audio Content Provider
-2011-09-21 17:12:11	I	msg:** Copyright (C) 2000-2011 Nullsoft, Inc.  All Rights Reserved.
-2011-09-21 17:12:11	I	msg:** Use "sc_trans filename.conf" to specify a config file.
-2011-09-21 17:12:11	I	msg:***************************************************************
-2011-09-21 17:12:11	I	msg:[TRANSCast] DNAS/posix(linux x86) v2.0.0.51 (Jul 29 2011) starting up...
-2011-09-21 17:12:11	I	msg:[MAIN] PID: 18711
-2011-09-21 17:12:11	I	msg:[MAIN] Loaded config from sc_trans_dj.conf
-2011-09-21 17:12:11	I	msg:[MAIN] TimeMultiplier = 1, TimeShift = 0
-2011-09-21 17:12:11	I	msg:[CALENDARMGR] Adding DJ event: m_djName=dj  m_archive=1  m_id=1 m_startDate=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_endDate=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_duration=0 m_timeOffset=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_hasStartDate=0 m_hasEndDate=0 m_hasDuration=0 m_hasTimeOffset=0 m_repeat=0
-2011-09-21 17:12:11	I	msg:[VUPUSH] 101 VU images loaded for left channel
-2011-09-21 17:12:11	I	msg:[VUPUSH] 101 VU images loaded for right channel
-2011-09-21 17:12:11	I	msg:[PLAYLISTMGR] Playlist load from file playlists/main.lst
-2011-09-21 17:12:11	I	msg:[PLAYLISTMGR] Caching playlist playlists/main.lst
-2011-09-21 17:12:11	I	msg:[PLAYLISTMGR] Load complete
-2011-09-21 17:12:11	I	msg:[MAIN] Streaming thread starting
-2011-09-21 17:12:11	I	msg:[SOURCERELAY] Thread starting
-2011-09-21 17:12:11	I	msg:[RESAMPLER] Deactivated 44100/2 == 44100/2
-2011-09-21 17:12:11	I	msg:[SOURCEANDENDPOINTMANAGER] Encoder thread 1 starting
-2011-09-21 17:12:11	I	msg:[SOURCEANDENDPOINTMANAGER] Broadcast thread 1 starting
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Giving replay gain calculator a head start
-2011-09-21 17:12:11	I	msg:[MAIN] Playlist decoder thread starting
-2011-09-21 17:12:11	I	msg:[RGCALC] Thread running
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Running
-2011-09-21 17:12:11	I	msg:[DECODE] Giving replay gain calculator a head start
-2011-09-21 17:12:11	I	msg:[MICROSERVER] Listening for connection on port 8505
-2011-09-21 17:12:11	I	msg:[DECODE] Begin decoding
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Creating stream socket
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Connecting to stream host
-2011-09-21 17:12:11	I	msg:[MAIN] SHOUTcast 2 receiver thread starting
-2011-09-21 17:12:11	I	msg:[MICROSERVER] Listening for connection on port 8501
-2011-09-21 17:12:11	I	msg:[MAIN] Broadcast Receiver thread starting
-2011-09-21 17:12:11	I	msg:[AAC] AAC setup complete
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Sending Ultravox 2.1 authentication
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Mime type
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Broadcast setup
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Negotiating buffer sizes
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Negotiated buffer size is 140KB
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Negotiating payload sizes
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Negotiated payload size is 16377
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Configuring ICY-NAME [Jonny two ninety]
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Configuring ICY-GENRE [Misc]
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Configuring ICY-URL [http://www.cattes.us/]
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Configuring ICY-PUB [0]
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Flush metadata
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Standby
-2011-09-21 17:12:11	I	msg:[UVOX2] 717882337 Streaming
-2011-09-21 17:12:12	I	msg:[DECODE] Next file is /home/alan/Music/uploads/02_Lift_Off_feat__Beyonce_1.mp3
-2011-09-21 17:12:12	W	msg:[MP3 DECODE] 1943316792 Could not calculate file length
-2011-09-21 17:12:12	W	msg:[MP3 DECODE] 1373586950 Could not calculate file length
-2011-09-21 17:12:12	W	msg:Could not load metadata because could not open file #!/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue
-2011-09-21 17:12:12	I	msg:[UVOX2] 717882337 Sending metadata 3902 [243 bytes] content=
-<?xml version="1.0" encoding="UTF-8" ?>
-<metadata>
-<TIT2>02_Lift_Off_feat__Beyonce_1</TIT2>
-<extension>
-	<title seq="1">02_Lift_Off_feat__Beyonce_1</title>
-	<title seq="2">manage</title>
-	<title seq="3">manage</title>
-</extension>
-</metadata>
-
-2011-09-21 17:13:08	I	msg:[MAIN] Exiting loop
-2011-09-21 17:13:08	I	msg:[DECODE] Exiting decoder thread
-2011-09-21 17:13:08	I	msg:[AAC] Exiting encoder thread
-2011-09-21 17:13:08	I	msg:[RGCALC] Thread exiting
-2011-09-21 17:13:08	I	msg:[RESAMPLER] tIn=94.1192 tOut=94.1192 bIn=16602624 bOut=16602624
-2011-09-21 17:13:08	I	msg:[CROSSFADER] in=94.1192 out=93.1192
-2011-09-21 17:13:08	I	msg:<***>	Logger shutdown
+2011-09-21 17:43:20	I	msg:<***>	Logger startup
+2011-09-21 17:43:20	I	msg:<***>	version 2.0.0.51
+2011-09-21 17:43:20	D	msg:<***>	
+2011-09-21 17:43:20	I	msg:***************************************************************
+2011-09-21 17:43:20	I	msg:** TRANScast Distributed Network Audio Content Provider
+2011-09-21 17:43:20	I	msg:** Copyright (C) 2000-2011 Nullsoft, Inc.  All Rights Reserved.
+2011-09-21 17:43:20	I	msg:** Use "sc_trans filename.conf" to specify a config file.
+2011-09-21 17:43:20	I	msg:***************************************************************
+2011-09-21 17:43:20	I	msg:[TRANSCast] DNAS/posix(linux x86) v2.0.0.51 (Jul 29 2011) starting up...
+2011-09-21 17:43:20	I	msg:[MAIN] PID: 19836
+2011-09-21 17:43:20	I	msg:[MAIN] Loaded config from sc_trans_dj.conf
+2011-09-21 17:43:20	I	msg:[MAIN] TimeMultiplier = 1, TimeShift = 0
+2011-09-21 17:43:20	I	msg:[CALENDARMGR] Adding DJ event: m_djName=dj  m_archive=1  m_id=1 m_startDate=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_endDate=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_duration=0 m_timeOffset=year:0,mon:0,mday:0,hour:0,min:0,sec:0,isdst:0,wday:0,yday:0 m_hasStartDate=0 m_hasEndDate=0 m_hasDuration=0 m_hasTimeOffset=0 m_repeat=0
+2011-09-21 17:43:20	I	msg:[VUPUSH] 101 VU images loaded for left channel
+2011-09-21 17:43:20	I	msg:[VUPUSH] 101 VU images loaded for right channel
+2011-09-21 17:43:20	I	msg:[PLAYLISTMGR] Playlist load from file playlists/main.lst
+2011-09-21 17:43:20	I	msg:[PLAYLISTMGR] Caching playlist playlists/main.lst
+2011-09-21 17:43:20	I	msg:[PLAYLISTMGR] Load complete
+2011-09-21 17:43:20	I	msg:[MAIN] Streaming thread starting
+2011-09-21 17:43:20	I	msg:[SOURCERELAY] Thread starting
+2011-09-21 17:43:20	I	msg:[RESAMPLER] Deactivated 44100/2 == 44100/2
+2011-09-21 17:43:20	I	msg:[SOURCEANDENDPOINTMANAGER] Encoder thread 1 starting
+2011-09-21 17:43:20	I	msg:[SOURCEANDENDPOINTMANAGER] Broadcast thread 1 starting
+2011-09-21 17:43:20	I	msg:[MAIN] Playlist decoder thread starting
+2011-09-21 17:43:20	I	msg:[MICROSERVER] Listening for connection on port 8505
+2011-09-21 17:43:20	I	msg:[MAIN] SHOUTcast 2 receiver thread starting
+2011-09-21 17:43:20	I	msg:[MICROSERVER] Listening for connection on port 8501
+2011-09-21 17:43:20	I	msg:[MAIN] Broadcast Receiver thread starting
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Giving replay gain calculator a head start
+2011-09-21 17:43:20	I	msg:[DECODE] Giving replay gain calculator a head start
+2011-09-21 17:43:20	I	msg:[AAC] AAC setup complete
+2011-09-21 17:43:20	I	msg:[RGCALC] Thread running
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Running
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Creating stream socket
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Connecting to stream host
+2011-09-21 17:43:20	I	msg:[DECODE] Begin decoding
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Sending Ultravox 2.1 authentication
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Mime type
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Broadcast setup
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Negotiating buffer sizes
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Negotiated buffer size is 140KB
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Negotiating payload sizes
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Negotiated payload size is 16377
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Configuring ICY-NAME [Jonny two ninety]
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Configuring ICY-GENRE [Misc]
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Configuring ICY-URL [http://www.cattes.us/]
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Configuring ICY-PUB [0]
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Flush metadata
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Standby
+2011-09-21 17:43:20	I	msg:[UVOX2] 308121431 Streaming
+2011-09-21 17:43:20	E	msg:[PLAYLISTMGR] runRemoteApp WEXITSTATUS() == 1 [/home/alan/.virtualenvs/shoutcast/bin/python /home/alan/coding/shoutcast-web/shoutcast/manage.py queue 3]
+2011-09-21 17:43:20	I	msg:[PLAYLISTMGR] Deactivating playlist=main id=-1
+2011-09-21 17:43:22	W	msg:[DECODE] Playlist is empty
+2011-09-21 17:43:26	I	msg:[MAIN] Exiting loop
+2011-09-21 17:43:26	I	msg:[AAC] Exiting encoder thread
+2011-09-21 17:43:26	E	msg:[DECODE] Playlist has run dry
+2011-09-21 17:43:26	I	msg:[DECODE] Exiting decoder thread
+2011-09-21 17:43:27	I	msg:[RGCALC] Thread exiting
+2011-09-21 17:43:27	I	msg:[RESAMPLER] tIn=0 tOut=0 bIn=0 bOut=0
+2011-09-21 17:43:27	I	msg:[CROSSFADER] in=0 out=0
+2011-09-21 17:43:27	I	msg:<***>	Logger shutdown

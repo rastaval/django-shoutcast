@@ -21,11 +21,17 @@ class Command(BaseCommand):
         for root, dirnames, filenames in os.walk(path):
             for filename in fnmatch.filter(filenames, '*.mp3'):
                 song_file_path = root + '/' + filename
-
+                
                 upload = Upload()
-                upload.user = User.objects.get(pk=1)
-                with open(song_file_path, 'rb') as song_file:
-                    upload.song_file.save(filename, File(song_file), save=True)
-                self.stdout.write("added %s \n" % filename)
-                upload.save()
+                userthing = User.objects.get(pk=1)
 
+                with open(song_file_path, 'rb') as song_file:
+                    try:
+                        obj = Upload.objects.get(song_file=File(song_file))
+                    except Upload.DoesNotExist:
+                        upload.song_file.save(filename, File(song_file), save=False)
+                        upload.user = userthing
+                        upload.save()
+                        self.stdout.write("added %s \n" % filename)
+                    except:
+                        pass
