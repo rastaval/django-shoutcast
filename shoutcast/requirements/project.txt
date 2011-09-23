@@ -10,4 +10,7 @@
 mutagen
 pyechonest
 slumber
-tastypie
+django-tastypie
+pyechonest
+lxml
+mutagen

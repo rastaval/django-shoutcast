@@ -1051,3 +1051,237 @@ icyPub=0
 </extension>
 </metadata>
 
+2011-09-22 21:18:14	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [604 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Through the Hosiery</TIT2>
+<TLEN>186920</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>13</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
+<extension>
+	<title seq="1">Crystal Castles - Through the Hosiery</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-22 21:21:19	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [604 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Through the Hosiery</TIT2>
+<TLEN>186920</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>13</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
+<extension>
+	<title seq="1">Crystal Castles - Through the Hosiery</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-22 21:24:25	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [554 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 2]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Dive (Smart Sessions)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">2</TPOS>
+<TRCK total="18">7</TRCK>
+<TYER>2011</TYER>
+<extension>
+	<title seq="1">Nirvana - Dive (Smart Sessions)</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-22 21:28:18	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [598 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Crystal Castles</TALB>
+<TCON>Electronic</TCON>
+<TDRC><year>2008</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Courtship Dating</TIT2>
+<TLEN>210453</TLEN>
+<TPE1>Crystal Castles</TPE1>
+<TRCK>07</TRCK>
+<TSSE>LAME 32bits version 3.98 (beta 6, Mar 12 2008) (http://www.mp3dev.org/)</TSSE>
+<TYER>2008</TYER>
+<extension>
+	<title seq="1">Crystal Castles - Courtship Dating</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-22 21:31:48	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [579 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Pearl Jam Twenty [Disc 1 - From the Film &apos;PJ20&apos;]</TALB>
+<TCON>Alternative</TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Thumbing My Way (Chop Suey, Seattle 9-6-02)</TIT2>
+<TPE1>Pearl Jam</TPE1>
+<TRCK>10</TRCK>
+<TYER>2011</TYER>
+<extension>
+	<title seq="1">Pearl Jam - Thumbing My Way (Chop Suey, Seattle 9-6-02)</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-22 21:36:09	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [576 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 3]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Stay Away (The Devonshire Mixes)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">3</TPOS>
+<TRCK total="11">9</TRCK>
+<TYER>2011</TYER>
+<extension>
+	<title seq="1">Nirvana - Stay Away (The Devonshire Mixes)</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-22 21:39:29	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [571 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Sliver [Live]</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">21</TRCK>
+<TYER>2011</TYER>
+<extension>
+	<title seq="1">Nirvana - Sliver [Live]</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-22 21:41:31	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [585 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 1]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Something In The Way</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">1</TPOS>
+<TPUB>Geffen (Universal)</TPUB>
+<TRCK total="22">12</TRCK>
+<TYER>2011</TYER>
+<extension>
+	<title seq="1">Nirvana - Something In The Way</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-22 21:45:22	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [551 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Pearl Jam Twenty [Disc Two - Rarities and Inspiration]</TALB>
+<TCON>Alternative</TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Nothing As It Seems (Demo 1999)</TIT2>
+<TPE1>Pearl Jam</TPE1>
+<TRCK>08</TRCK>
+<TYER>2011</TYER>
+<extension>
+	<title seq="1">Pearl Jam - Nothing As It Seems (Demo 1999)</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-22 21:50:03	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [553 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 2]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Drain You (BBC Live)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">2</TPOS>
+<TRCK total="18">17</TRCK>
+<TYER>2011</TYER>
+<extension>
+	<title seq="1">Nirvana - Drain You (BBC Live)</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
+2011-09-22 21:54:05	I	msg:[SRC 127.0.0.1:45963 sid=1] Got complete metadata message type=3902 [553 bytes] id=1 span=1 content=
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+<TALB>Nevermind (Limited Super Deluxe Edition) [Disc 2]</TALB>
+<TCON v1="17"></TCON>
+<TDRC><year>2011</year></TDRC>
+<TENC>TRANSCast DNAS/posix(linux x86) v2.0.0.51</TENC>
+<TIT2>Drain You (BBC Live)</TIT2>
+<TPE1>Nirvana</TPE1>
+<TPOS total="4">2</TPOS>
+<TRCK total="18">17</TRCK>
+<TYER>2011</TYER>
+<extension>
+	<title seq="1">Nirvana - Drain You (BBC Live)</title>
+	<title seq="2">manage</title>
+	<title seq="3">manage</title>
+	<title seq="4">manage</title>
+	<soon>manage</soon>
+</extension>
+</metadata>
+
