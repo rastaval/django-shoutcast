@@ -37,16 +37,23 @@
                 <div class="span14">
 
                     <div class="alert-message block-message warning" id="nowplaying">
+
                         {% if track == "dj" %}
+                            {% if dj == user.username %}
+                            <h2>Hey bro your're DJ'ing right now! Dont suck or you'll get booted off.</h2>
+                            <h3>Connect to fridayd.me:8500 dj:{{ dj_pass }}</h3>
+                            {% else %}
                         <h2>A dj saved my life last night and hes playing right now!</h2>
                         <br/>
                         <h1><a class="btn large primary" href="http://radio.cattes.us:9021/listen.pls">click to listen to {{ current_song }}</a></h1>
                         {% endif %}
+                        {% endif %}
+
                         {% if track == "playlist" %}
                         <h1 style="margin-bottom: -5px;">Now Playing:</h1>
                         <h2><b>{{ current_song.title }} by {{ current_song.artist }}</b></h2>
                         <br/>
-                        <h4><a class="btn large primary" href="http://radio.cattes.us:9021/listen.pls">Play In Media Player</a> <a class="btn large primary" href="#">Play In Browser</a>   <button class="btn danger large" data-controls-modal="modal-dj" data-databackrop="true" data-backdrop="true">Wanna dja?</button></h4>
+                        <h4><a class="btn large primary" href="http://radio.cattes.us:9021/listen.pls">Play In Media Player</a> <a class="btn large primary" href="#">Play In Browser</a>   <button class="btn danger large" data-controls-modal="modal-dj" data-databackrop="true" data-backdrop="true">Wanna dj?</button></h4>
                         {% endif %}
                     </div>
                 </div>
