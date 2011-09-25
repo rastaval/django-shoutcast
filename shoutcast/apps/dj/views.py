@@ -15,6 +15,7 @@ from time import gmtime, strftime
 from django.http import HttpResponse
 import random
 import string
+from django.contrib import messages
 
 
 
@@ -93,8 +94,10 @@ def addshow(request):
         cache.set('dj_name', request.user.id)
         cache.set('dj_showname', show_name)
         cache.set('dj_ison', 'yes')
-    
+
+        messages.success(request, 'You may now login: radio.cattes.us:8500 dj:%s' % cache.get('dj_pass'))
         HttpResponseRedirect('/')
     
     else:
+        messages.error(request, "something done fucked up.")
         HttpResponseRedirect('/')
