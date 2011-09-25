@@ -32,10 +32,10 @@ class ApiQuery(object):
         return xmldict
 
 if __name__ == "__main__":
-    api_url = "http://localhost:7999"
+    api_url = "http://fridayd.me:7999"
     api_user = "admin"
     api_pass = "goaway"
 
     api = ApiQuery(api_url, api_user, api_pass)
-    print api.request(op="getstatus", seq="420")
+    print api.request(op="listdjs", name="dj",  seq="420")
 
