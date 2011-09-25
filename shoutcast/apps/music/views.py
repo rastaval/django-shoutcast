@@ -22,7 +22,7 @@ def index(request):
     status = api.request(op="getstatus", seq="420")
     source = status['data']['status']['activesource']['source']
 
-    dj_pass = cach.get('dj_pass')
+    dj_pass = cache.get('dj_pass')
 
     if source == 'dj':
         track = 'dj'
