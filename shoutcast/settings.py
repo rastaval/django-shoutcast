@@ -4,7 +4,9 @@
 import os.path
 import posixpath
 import pinax
+import djcelery
 
+djcelery.setup_loader()
 PINAX_ROOT = os.path.abspath(os.path.dirname(pinax.__file__))
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
@@ -160,6 +162,7 @@ INSTALLED_APPS = [
     "announcements",
     "pagination",
     "idios",
+    "djcelery",
     
     # Pinax
     "pinax.apps.account",
@@ -210,6 +213,14 @@ EMAIL_DEBUG = DEBUG
 DEBUG_TOOLBAR_CONFIG = {
     "INTERCEPT_REDIRECTS": False,
 }
+
+
+BROKER_HOST = "localhost"
+BROKER_PORT = 5672
+BROKER_USER = "guest"
+BROKER_PASSWORD = "guest"
+BROKER_VHOST = "/"
+
 
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.

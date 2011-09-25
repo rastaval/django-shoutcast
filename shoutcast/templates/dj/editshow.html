@@ -1,0 +1,23 @@
+{% extends "site_base.html" %}
+
+{% block header_main_text %}
+{{ djshow.show_name }}
+{% endblock %}
+
+{% block header_sub_text %}
+Edit your show niggah.
+{% endblock %}
+
+{% block dj_active %}active{% endblock %}
+
+{% block main_content %}
+
+<div class="row">
+    <form method="post" action="/editshow/">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Save" id="submit" />
+    </form>
+</div>
+
+{% endblock %}

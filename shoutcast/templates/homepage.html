@@ -11,7 +11,18 @@
 {% block home_active %}active{% endblock %}
 
 {% block main_content %}
-    <div class="nowplaying">
+    <div id="modal-dj" class="modal hide fade">
+        <div class="modal-header">
+            <a href="#" class="close">&times;</a>
+            <h3>I wanna DJ!</h3>
+        </div>
+        <div class="modal-body">
+            <p>So you wanna DJ eh? Well sure. Just make sure you edit your show info <a class="label important" href="/editshow/">here</a> really quick.</p>
+            <p>When you're ready click this here button. If someone already beat you to the punch then welp! be fast next time.</p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn large danger" href="/addshow">Click here when ready!</a>
+        </div>
     </div>
 
     <div class="row">
@@ -30,7 +41,7 @@
                         <h1 style="margin-bottom: -5px;">Now Playing:</h1>
                         <h2><b>{{ current_song.title }} by {{ current_song.artist }}</b></h2>
                         <br/>
-                        <h4><a class="btn large primary" href="http://radio.cattes.us:9021/listen.pls">Play In Media Player</a> <a class="btn large primary" href="#">Play In Browser</a></h4>
+                        <h4><a class="btn large primary" href="http://radio.cattes.us:9021/listen.pls">Play In Media Player</a> <a class="btn large primary" href="#">Play In Browser</a> <button data-controls-modal="modal-dj", data-backdrop="true", data-keyboard="true", class="btn large info" href="#">I wanna DJ yo!</button></h4>
                         {% endif %}
                     </div>
                 </div>

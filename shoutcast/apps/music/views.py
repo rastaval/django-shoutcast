@@ -5,7 +5,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 
 from music.models import Song
-from dj.models import DjShow, CoolLinks
+from dj.models import DjShow, CoolLinks, ShowArchive
 from playlist.models import RecentTracks
 from xml.etree import cElementTree as ElementTree
 from utils.XmlToDict import XmlDictConfig
@@ -26,8 +26,6 @@ def index(request):
     else:
         track = 'playlist'
 
-    #track = 'dj'
-
     if track == 'playlist':
         playing = status['data']['status']['activesource']['currenttrack']
         current_song = Song.objects.get(file_path=playing)
@@ -44,8 +42,8 @@ def index(request):
     else:
         current_song = 'dicks'
 
-    shows = DjShow.objects.order_by('date')[:10]
-    links = CoolLinks.objects.order_by('id')[:10]
+    shows = ShowArchive.objects.order_by('-date')[:10]
+    links = CoolLinks.objects.order_by('-id')[:10]
 
     return render_to_response('homepage.html', {
         "songs":rsongs,

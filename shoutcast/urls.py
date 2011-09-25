@@ -24,6 +24,8 @@ urlpatterns = patterns("",
     url(r"^management/", include("management.urls")),
     url(r"^show/(?P<id>\d)/$", "dj.views.showpage", name="dj_show"),
     url(r"^shows/", "dj.views.shows", name="show_list"),
+    url(r"^editshow/", "dj.views.editshow", name="show_edit"),
+    url(r"^addshow/", "dj.views.addshow", name="add_show"),
 )
 
 
