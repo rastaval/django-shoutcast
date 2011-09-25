@@ -42,6 +42,7 @@ def index(request):
     else:
         current_song = 'dicks'
 
+
     shows = ShowArchive.objects.order_by('-date')[:10]
     links = CoolLinks.objects.order_by('-id')[:10]
 
