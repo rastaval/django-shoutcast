@@ -13,3 +13,4 @@ slumber
 django-tastypie
 lxml
 django-celery
+redis

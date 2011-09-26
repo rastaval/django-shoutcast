@@ -9,16 +9,14 @@ from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from utils.trans_api import ApiQuery
-from django.core.cache import cache
-from django.shortcuts import redirect
 from time import gmtime, strftime
-from django.http import HttpResponse
 import random
 import string
 from django.contrib import messages
+import redis
 
 
-
+r = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT)
 api = ApiQuery(settings.API_URL, settings.API_USER, settings.API_PASS)
 
 def shows(request):
@@ -62,7 +60,6 @@ def editshow(request):
     return render_to_response('dj/editshow.html', {
         "djshow": djshow,
         "form": form,
-        "messages": messages,
     }, context_instance=RequestContext(request))
 
 @login_required
@@ -83,21 +80,26 @@ def addshow(request):
     show_info = DjShow.objects.get(dj=request.user)
     show_name = show_info.show_name
 
-    if cache.get('dj_ison') == None:
+    if r.get('dj_ison'):
+        messages.error(request, "A DJ is already on bro.")
+        return HttpResponseRedirect('/')
+
+    else:
         passcrap = ''.join(random.choice(string.ascii_uppercase) for x in range(5)) 
-        api.request(op="addevent", seq="320", type="dj", name=show_name, duration="1:00:00")
         api.request(op="modifydj", seq="420", name="dj", password=passcrap, priority=8)
         start_time = strftime("%H:%M", gmtime())
     
-        cache.set('dj_pass', passcrap)
-        cache.set('dj_timestart', start_time)
-        cache.set('dj_name', request.user.id)
-        cache.set('dj_showname', show_name)
-        cache.set('dj_ison', 'yes')
+        r.set('dj_pass', passcrap)
+        r.set('dj_timestart', start_time)
+        r.set('dj_name', request.user.username)
+        r.set('dj_showname', show_name)
+        r.set('dj_ison', 'yes')
 
-        messages.success(request, 'You may now login: radio.cattes.us:8500 dj:%s' % cache.get('dj_pass'))
-        HttpResponseRedirect('/')
-    
-    else:
-        messages.error(request, "something done fucked up.")
-        HttpResponseRedirect('/')
+        r.expire('dj_pass', 3600)
+        r.expire('dj_timestart', 3600)
+        r.expire('dj_name', 3600)
+        r.expire('dj_showname', 3600)
+        r.expire('dj_ison', 3600)
+
+        messages.success(request, 'You may now login: radio.cattes.us:8500 dj:%s' % r.get('dj_pass'))
+        return HttpResponseRedirect('/')

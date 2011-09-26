@@ -37,16 +37,17 @@
                 <div class="span14">
 
                     <div class="alert-message block-message warning" id="nowplaying">
+                        {% if track == "isdj" %}
+                        <h2>Hey bro youre live!</h2>
+                        <br>
+                        <h1>Connect to radio.cattes.us:8500 using dj:{{ djpass }} as your password.</h1>
+                        {% endif %}
 
                         {% if track == "dj" %}
-                            {% if dj == user.username %}
-                            <h2>Hey bro your're DJ'ing right now! Dont suck or you'll get booted off.</h2>
-                            <h3>Connect to fridayd.me:8500 dj:{{ dj_pass }}</h3>
-                            {% else %}
                         <h2>A dj saved my life last night and hes playing right now!</h2>
                         <br/>
-                        <h1><a class="btn large primary" href="http://radio.cattes.us:9021/listen.pls">click to listen to {{ current_song }}</a></h1>
-                        {% endif %}
+                        <h1>Listen to {{ current_song }} with DJ {{ dj }}</h1>
+                        <h1><a class="btn large primary" href="http://radio.cattes.us:9021/listen.pls">In your media player</a> <a href="#" class="btn primary large">In your browser</a></h1>
                         {% endif %}
 
                         {% if track == "playlist" %}
@@ -55,16 +56,17 @@
                         <br/>
                         <h4><a class="btn large primary" href="http://radio.cattes.us:9021/listen.pls">Play In Media Player</a> <a class="btn large primary" href="#">Play In Browser</a>   <button class="btn danger large" data-controls-modal="modal-dj" data-databackrop="true" data-backdrop="true">Wanna dj?</button></h4>
                         {% endif %}
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="span9">
+        <div class="span14">
             <div class="row">
-                <div class="span9">
+                <div class="span14">
 
-                    <h1 id="playedheader">Recently Played</h1>
+                    <h1 id="playedheader">Recent AutoDJ Songs</h1>
                     {% for songs in songs %}
                     <div class="songbox">
 
@@ -86,33 +88,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="span5" id="shows">
-            <div class="row">
-                <div class="span5" id="showlist">
-                    <h4>Past Shows</h4>
-                    <ul class="unstyled" id="pastlist">
-                        {% for show in shows %}
-                        <li>{{ show.date|timesince }} ago - <a href="show/{{ show.id }}">{{ show.show_name }} (DJ {{ show.dj }})</a></li>
-                        {%  endfor %}
-                    </ul>
-                </div>
-            </div>
-
-        </div><div class="span5" id="shows">
-            <div class="row">
-                <div class="span5" id="showlist">
-                    <h4>Cool Links</h4>
-                    <ul class="unstyled" id="pastlist">
-                        {% for link in links %}
-                        <li><a href="{{ link.url }}">{{ link.name }}</a></li>
-                        {%  endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
     </div>
 {% endblock %}
 

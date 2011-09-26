@@ -214,12 +214,17 @@ DEBUG_TOOLBAR_CONFIG = {
     "INTERCEPT_REDIRECTS": False,
 }
 
-
+BROKER_TRANSPORT = "redis"
 BROKER_HOST = "localhost"
-BROKER_PORT = 5672
-BROKER_USER = "guest"
-BROKER_PASSWORD = "guest"
+BROKER_PORT = 9087
 BROKER_VHOST = "/"
+
+CELERY_RESULT_BACKEND = "redis"
+CELERY_REDIS_HOST = "localhost"
+CELERY_REDIS_PORT = 9087
+CELERY_REDIS_DB = 0
+
+CELERY_IGNORE_RESULT = True
 
 
 # local_settings.py can be used to override environment-specific settings
