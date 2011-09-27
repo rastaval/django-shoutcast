@@ -12,3 +12,4 @@ fabfile.py
 shoutcast/whoosh/
 whoosh/*
 shoutcast/whoosh/*
+celery
