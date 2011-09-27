@@ -165,6 +165,7 @@ INSTALLED_APPS = [
     "djcelery",
     "haystack",
     "south",
+    "gunicorn",
     
     # Pinax
     "pinax.apps.account",
