@@ -19,6 +19,8 @@ import redis
 r = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT)
 api = ApiQuery(settings.API_URL, settings.API_USER, settings.API_PASS)
 
+
+@login_required
 def shows(request):
     shows = ShowArchive.objects.order_by('-date')
 
@@ -26,6 +28,7 @@ def shows(request):
         "shows": shows,
     }, context_instance=RequestContext(request))
 
+@login_required
 def showpage(request, id):
     page = ShowArchive.objects.get(id=id)
 
@@ -34,6 +37,7 @@ def showpage(request, id):
     }, context_instance=RequestContext(request))
 
 
+@login_required
 def startshow(request):
     pass
 
@@ -95,11 +99,21 @@ def addshow(request):
         r.set('dj_showname', show_name)
         r.set('dj_ison', 'yes')
 
-        r.expire('dj_pass', 3600)
-        r.expire('dj_timestart', 3600)
-        r.expire('dj_name', 3600)
-        r.expire('dj_showname', 3600)
-        r.expire('dj_ison', 3600)
+        r.expire('dj_pass', 30)
+        r.expire('dj_timestart', 30)
+        r.expire('dj_name', 30)
+        r.expire('dj_showname', 30)
+        r.expire('dj_ison', 30)
 
         messages.success(request, 'You may now login: radio.cattes.us:8500 dj:%s' % r.get('dj_pass'))
+        return HttpResponseRedirect('/')
+
+@login_required
+def leavestream(request):
+    if r.get('dj_name') == request.user.username:
+        r.delete('dj_pass', 'dj_timestart', 'dj_name', 'dj_showname', 'dj_ison')
+        messages.success(request, 'Successfully Left the Stream')
+        return HttpResponseRedirect('/')
+    else:
+        messages.error(request, "You arent the current dj.")
         return HttpResponseRedirect('/')

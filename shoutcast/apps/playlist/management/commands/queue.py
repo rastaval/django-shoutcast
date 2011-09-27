@@ -6,16 +6,29 @@ from playlist.models import RecentTracks
 from pyechonest import config
 from pyechonest import artist
 from django.conf import settings
+import redis
 
-config.ECHO_NEST_API_KEY = settings.ECHOES_NEST_API_KEY
+
+r = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT)
 
 class Command(BaseCommand):
     args = '<number of songs ahead>'
     help = "returns x amount of songs ahead in the playlist"
 
     def handle(self, *args, **options):
-        song = Song.objects.order_by('?')[0]
-        plist = RecentTracks()
-        plist.song = song
-        plist.save()
-        self.stdout.write(song.file_path)
+        if r.lindex("playlist", 0):
+            #lpush songs into playlist
+            r_song = r.rpop("playlist")
+            song = Song.objects.get(id=r_song)
+            r.lpush("recent", song.id)
+            try:
+                coming = r.lrange("playlist", 0, 0)[0]
+            except:
+                coming = None
+            r.set("comingup", coming)
+            self.stdout.write(song.file_path)
+
+        else:
+            song = Song.objects.order_by('?')[0]
+            r.lpush("recent", song.id)
+            self.stdout.write(song.file_path)

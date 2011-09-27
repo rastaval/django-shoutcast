@@ -1,0 +1,56 @@
+{% extends 'site_base.html' %}
+
+{% block main_content %}
+    <h2>Search</h2>
+
+    <form method="get" action=".">
+        <div class="clearfix">
+        <div class="search-page">
+            <br/>
+            <p><input type="text" name="q" value="{{ query }}" class="id_q xlarge"/></p>
+            <input type="hidden" name="models" value="music.song" id="id_models_0" />
+            <br/>
+            <input type="submit" value="Search" />
+        </div>
+        </div>
+
+        {% if query %}
+            <h3>Results</h3>
+
+                <table class="zebra-striped">
+                    <thead>
+                        <tr>
+                            <th>Genre</th>
+                            <th>Title</th>
+                            <th>Artist</th>
+                            <th>Album</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for result in page.object_list %}
+                        <tr>
+                            <td>{{ result.object.genre.genre }}</td>
+                            <td>{{ result.object.title }}</td>
+                            <td>{{ result.object.artist.artist }}</td>
+                            <td>{{ result.object.album.album }}</td>
+                            <td><a href="/song/{{ result.object.id }}">View</a></td>
+                        </tr>
+                    {% empty %}
+                            No Results Found.
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+            {% if page.has_previous or page.has_next %}
+                <div>
+                    {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
+                    |
+                    {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
+                </div>
+            {% endif %}
+        {% else %}
+            {# Show some example queries to run, maybe query syntax, something else? #}
+        {% endif %}
+    </form>
+{% endblock %}

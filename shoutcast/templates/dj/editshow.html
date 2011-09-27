@@ -1,4 +1,6 @@
 {% extends "site_base.html" %}
+{% load uni_form_tags %}
+
 
 {% block header_main_text %}
 {{ djshow.show_name }}
@@ -13,11 +15,14 @@ Edit your show niggah.
 {% block main_content %}
 
 <div class="row">
-    <form method="post" action="/editshow/">
+<div class="span16">
+    <form method="post" action="/editshow/" class="form-stacked uniform">
         {% csrf_token %}
-        {{ form }}
+        {{ form|as_uni_form }}
+        <br/>
         <input type="submit" value="Save" id="submit" />
     </form>
+</div>
 </div>
 
 {% endblock %}

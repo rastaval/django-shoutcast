@@ -1,0 +1,21 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+
+{% block home_active %}active{% endblock %}
+
+{% block header_main_text %}{{ object.title }}{% endblock %}
+{% block header_sub_text %}{{ object.genre.genre }}{% endblock %}
+
+{% block main_content %}
+    <p>{{ object.album.album }}</p>
+    <p>{{ object.artist.artist }}</p>
+    <p>{{ object.bitrate }}</p>
+    <p><a href="#">Add to playlist</a></p>
+{% endblock %}

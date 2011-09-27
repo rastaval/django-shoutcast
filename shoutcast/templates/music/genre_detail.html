@@ -1,0 +1,36 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+
+{% block home_active %}active{% endblock %}
+
+{% block header_main_text %}{{ genre.genre }} {% endblock %}
+
+{% block main_content %}
+    <table class="zebra-striped">
+        <thead>
+            <tr>
+                <th>Song</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Add to Playlist</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for song in genre.song_set.all %}
+            <tr>
+                <td>{{ song.title }}</td>
+                <td>{{ song.artist.artist }}</td>
+                <td>{{ song.album.album }}</td>
+                <td><a href="/addsong/{{ song.id }}" class="label notice">Add to Playlist</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

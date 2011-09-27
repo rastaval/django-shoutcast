@@ -32,15 +32,16 @@
 
     <div class="row">
 
-        <div class="span14">
+        <div class="span15">
             <div class="row">
-                <div class="span14">
+                <div class="span15">
 
                     <div class="alert-message block-message warning" id="nowplaying">
                         {% if track == "isdj" %}
                         <h2>Hey bro youre live!</h2>
                         <br>
                         <h1>Connect to radio.cattes.us:8500 using dj:{{ djpass }} as your password.</h1>
+                        <h1><a class="btn large primary" href="/stopdj">Im Done Being a DJ for Now</a></h1>
                         {% endif %}
 
                         {% if track == "dj" %}
@@ -61,26 +62,45 @@
                 </div>
             </div>
         </div>
-
         <div class="span16">
             <div class="row">
                 <div class="span16">
+                    <h1 id="comingheader">Coming Up...</h1>
+                    <div class="songbox alert-message block-message error">
+                        {% if coming %}
+                        <div class="artistimage">
+                            <a href="{{ coming.artist.artist_image }}"><img class="thumbnail" src="{{ coming.artist.artist_image }}" /></a>
+                        </div>
 
+                        <div class="songtitle">
+                            {{ coming.title }}
+                            by {{ coming.artist }}
+                        </div>
+
+                        <div class="artistbio">
+                            <p><a href="{{ coming.artist.artist_url }}"><b>artist bio</b></a> :: {{ coming.artist.artist_bio|truncatewords:60 }}</p>
+                        </div>
+                        {% else %}
+                        <h3>No one has added any songs.. resorting to randomness.</h3>
+                        <h4>Please fix this and add some songs!</h4>
+                        {% endif %}
+                    </div>
+                    <br />
                     <h1 id="playedheader">Recent AutoDJ Songs</h1>
                     {% for songs in songs %}
                     <div class="songbox">
 
                         <div class="artistimage">
-                            <a href="{{ songs.song.artist.artist_image }}"><img class="thumbnail" src="{{ songs.song.artist.artist_image }}" /></a>
+                            <a href="{{ songs.artist.artist_image }}"><img class="thumbnail" src="{{ songs.artist.artist_image }}" /></a>
                         </div>
 
                         <div class="songtitle">
-                            {{ songs.song.title }}<br> 
-                            by {{ songs.song.artist }}
+                            {{ songs.title }}
+                            by {{ songs.artist }}
                         </div>
 
                         <div class="artistbio">
-                            <p><a href="{{ songs.song.artist.artist_url }}"><b>artist bio</b></a> :: {{ songs.song.artist.artist_bio|truncatewords:60 }}</p>
+                            <p><a href="{{ songs.artist.artist_url }}"><b>artist bio</b></a> :: {{ songs.artist.artist_bio|truncatewords:60 }}</p>
                         </div>
 
                     </div>

@@ -163,6 +163,7 @@ INSTALLED_APPS = [
     "pagination",
     "idios",
     "djcelery",
+    "haystack",
     
     # Pinax
     "pinax.apps.account",
@@ -225,6 +226,10 @@ CELERY_REDIS_PORT = 9087
 CELERY_REDIS_DB = 0
 
 CELERY_IGNORE_RESULT = True
+
+HAYSTACK_SITECONF = 'music.search_sites'
+HAYSTACK_SEARCH_ENGINE = 'whoosh'
+HAYSTACK_WHOOSH_PATH = 'whoosh/shoutcast_index'
 
 
 # local_settings.py can be used to override environment-specific settings

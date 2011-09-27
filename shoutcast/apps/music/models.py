@@ -127,7 +127,7 @@ def upload_to_song(sender, instance, created, **kwargs):
         except:
             song_bitrate = 320
         try:
-            song_album = file_info['TALB']
+            song_album = file_info["TALB"]
         except:
             song_album = "Unknown"
 
@@ -142,6 +142,7 @@ def upload_to_song(sender, instance, created, **kwargs):
             "bitrate": song_bitrate,
             "artist": artist,
             "genre": genre,
+            "album": album,
             "file_name": os.path.basename(instance.song_file.name)
         }
 

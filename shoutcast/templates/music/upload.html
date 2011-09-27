@@ -1,0 +1,29 @@
+{% extends "site_base.html" %}
+{% load uni_form_tags %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block body_class %}home{% endblock %}
+
+{% block header_main_text %}Upload your tunes{% endblock %}
+{% block header_sub_text %}Make sure this shit is proper tagged or it wont work.{% endblock %}
+
+{% block upload_active %}active{% endblock %}
+
+{% block main_content %}
+
+    <div class="row">
+        <div class="span16">
+            <form enctype="multipart/form-data" method="post" action="" class="uniform">
+                {% csrf_token %}
+                 <h3>If you want FTP bug ElGruntox on irc</h3>
+                <br/>
+                {{ form|as_uni_form }}
+                <br/>
+                <input type="submit" value="Upload" id="submit" />
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
