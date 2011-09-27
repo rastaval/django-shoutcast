@@ -16,3 +16,6 @@ django-celery
 redis
 whoosh
 django-haystack
+gevent
+gunicorn
+south

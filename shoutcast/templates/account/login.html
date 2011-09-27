@@ -1,0 +1,60 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load uni_form_tags %}
+{% load ifsetting_tag %}
+{% load account_tags %}
+
+{% block head_title %}{% trans "Login" %}{% endblock %}
+
+{% block topbar %}
+<div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">YOSFM</a>
+          <ul class="nav">
+            <li class="{% block home_active %}active{% endblock %}"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+
+{% block main_content %}
+    
+    <h1>{% trans "Log In" %}</h1>
+    
+    {% if user.is_authenticated %}
+        {% user_display user as user_display %}
+        <p><span class="warning">{% trans "Note" %}</span>: {% blocktrans %}you are already logged in as {{ user_display }}.{% endblocktrans %}</p>
+    {% else %}
+        {% ifsetting ACCOUNT_OPEN_SIGNUP %}
+        {% url acct_signup as signup_url %}
+        <p>{% blocktrans %}Don't have an account? <a href="{{ signup_url }}">Sign up</a>!{% endblocktrans %}</p>
+        {% endifsetting %}
+    {% endif %}
+    
+    <form class="login uniForm" method="POST" action="{% url acct_login %}" autocapitalize="off">
+        {% csrf_token %}
+        <fieldset class="inlineLabels">
+            <div class="form_block">
+                <a href="{% url acct_passwd_reset %}">{% trans "Forgot password?" %}</a>
+            </div>
+            {{ form|as_uni_form }}
+            {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <div class="form_block">
+                <input type="submit" value="{% trans "Log in &raquo;" %}" />
+            </div>
+        </fieldset>
+    </form>
+
+{% endblock %}
+
+{% block extra_body %}
+<script>
+    $("#id_username").focus();
+</script>
+{% endblock %}

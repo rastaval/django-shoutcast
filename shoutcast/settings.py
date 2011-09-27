@@ -164,6 +164,7 @@ INSTALLED_APPS = [
     "idios",
     "djcelery",
     "haystack",
+    "south",
     
     # Pinax
     "pinax.apps.account",
@@ -191,6 +192,7 @@ EMAIL_BACKEND = "mailer.backend.DbBackend"
 ABSOLUTE_URL_OVERRIDES = {
     "auth.user": lambda o: "/profiles/profile/%s/" % o.username,
 }
+
 
 AUTH_PROFILE_MODULE = "profiles.Profile"
 NOTIFICATION_LANGUAGE_MODULE = "account.Account"
@@ -230,6 +232,7 @@ CELERY_IGNORE_RESULT = True
 HAYSTACK_SITECONF = 'music.search_sites'
 HAYSTACK_SEARCH_ENGINE = 'whoosh'
 HAYSTACK_WHOOSH_PATH = 'whoosh/shoutcast_index'
+ACCOUNT_USE_OPENID = False
 
 
 # local_settings.py can be used to override environment-specific settings

@@ -1,0 +1,58 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load uni_form_tags %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block topbar %}
+<div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">YOSFM</a>
+          <ul class="nav">
+            <li class="{% block home_active %}active{% endblock %}"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block main_content %}
+
+    <h1>{% trans "Sign Up" %}</h1>
+    
+    {% if user.is_authenticated %}
+        <p>{% trans "You are already logged in." %}</p>
+    {% else %}
+        <p>{% trans "Already have an account?" %} <a href="{% url acct_login %}">{% trans "Log In" %}</a>!</p>
+        
+        <form class="signup uniForm" id="signup_form" method="post" action="{% url acct_signup %}" autocapitalize="off">
+            {% csrf_token %}
+            <fieldset class="inlineLabels">
+                {{ form|as_uni_form }}
+                {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                   <br/>
+                <div class="form_block">
+                    <input type="submit" value="{% trans "Sign Up &raquo;" %}" />
+                </div>
+            </fieldset>
+        </form>
+        
+            {% if request.user.is_authenticated %}
+                <div><a href="{% url acct_logout %}?next={{ request.path }}&amp;sm={{ split_test }}&amp;sn=logout">logout</a></div>
+            {% endif %}
+        
+
+    {% endif %}
+{% endblock %}
+
+{% block extra_body %}
+    <script type="text/javascript">
+        $(function(){
+            $("#id_username").focus();
+        });
+    </script>
+{% endblock %}
