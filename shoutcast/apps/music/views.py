@@ -98,6 +98,7 @@ def view_artist(request, pk):
         "artist": artist,
     }, context_instance=RequestContext(request))
 
+@login_required
 def view_genre(request, pk):
     genre = Genre.objects.get(pk=pk)
     songs = genre.song_set.all()

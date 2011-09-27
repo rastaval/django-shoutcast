@@ -99,11 +99,11 @@ def addshow(request):
         r.set('dj_showname', show_name)
         r.set('dj_ison', 'yes')
 
-        r.expire('dj_pass', 30)
-        r.expire('dj_timestart', 30)
-        r.expire('dj_name', 30)
-        r.expire('dj_showname', 30)
-        r.expire('dj_ison', 30)
+        r.expire('dj_pass', 3600)
+        r.expire('dj_timestart', 3600)
+        r.expire('dj_name', 3600)
+        r.expire('dj_showname', 3600)
+        r.expire('dj_ison', 3600)
 
         messages.success(request, 'You may now login: radio.cattes.us:8500 dj:%s' % r.get('dj_pass'))
         return HttpResponseRedirect('/')
