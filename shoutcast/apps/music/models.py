@@ -66,7 +66,15 @@ class Artist(models.Model):
 
     def save(self, *args, **kwargs):    
         self.artist_slug = slugify(self.artist)
-        artist_results = echoartist.search(name=self.artist)[0]
+        try:
+            artist_results = echoartist.search(name=self.artist)[0]
+
+        except:
+            self.artist_url = "http://google.com"
+            self.artist_bio = "Couldnt find artist information."
+            self.artist_image = "http://i.imgur.com/dopj3.jpg"
+            super(Artist, self).save(*args, **kwargs)
+
         bio = artist_results.biographies[0]
         image = artist_results.images[0]
 
