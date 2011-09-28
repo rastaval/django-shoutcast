@@ -166,6 +166,8 @@ INSTALLED_APPS = [
     "haystack",
     "south",
     "gunicorn",
+    "sentry",
+    "sentry.client",
     
     # Pinax
     "pinax.apps.account",
@@ -234,6 +236,33 @@ HAYSTACK_SITECONF = 'music.search_sites'
 HAYSTACK_SEARCH_ENGINE = 'whoosh'
 HAYSTACK_WHOOSH_PATH = 'whoosh/shoutcast_index'
 ACCOUNT_USE_OPENID = False
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'handlers': {
+        'sentry': {
+            'level': 'DEBUG',
+            'class': 'sentry.client.handlers.SentryHandler',
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        }
+    },
+    'loggers': {
+        '()': {
+            'level': 'WARNING',
+            'handlers': ['sentry'],
+        },
+        'sentry.errors': {
+            'level': 'DEBUG',
+            'handlers': ['console'],
+            'propagate': False,
+        },
+    },
+}
 
 
 # local_settings.py can be used to override environment-specific settings
