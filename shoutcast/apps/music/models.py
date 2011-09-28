@@ -72,8 +72,15 @@ class Artist(models.Model):
         except:
            super(Artist, self).save(*args, **kwargs)
 
-        bio = artist_results.biographies[0]
-        image = artist_results.images[0]
+        try:
+            bio = artist_results.biographies[0]
+        except IndexError:
+            bio = {'text': "Couldn't find any artist information.", "url": "http://google.com"}
+        try:
+            image = artist_results.images[0]
+        except IndexError:
+            image = {"image": "http://i.imgur.com/dopj3.jpg",}
+
 
         try:
             self.artist_image = image['image']
@@ -163,17 +170,6 @@ def upload_to_song(sender, instance, created, **kwargs):
             "album": album,
             "file_name": os.path.basename(instance.song_file.name)
         }
-
-        #song.file_path = song_path
-        #song.length = song_length
-        #song.title = song_title
-        #song.bitrate = song_bitrate
-        #song.artist = artist
-        #song.album = album
-        #song.genre = genre
-        #song.file_name = os.path.basename(instance.song_file.name)
-        #
-        #song.save()
 
         song, created = Song.objects.get_or_create(**crap)
 
