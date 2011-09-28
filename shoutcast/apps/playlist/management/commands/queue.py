@@ -30,5 +30,13 @@ class Command(BaseCommand):
 
         else:
             song = Song.objects.order_by('?')[0]
+            if song.id in r.lrange("recent", 0, 5):
+                song = Song.objects.order_by('?')[0]
+            r_artists = []
+            for a in r.lrange("recent", 0, 5):
+                s = Song.objects.get(id=a)
+                r_artists.append(s.artist.artist)
+            if song.artist.artist in r_artists:
+                song = Song.objects.order_by('?')[0]
             r.lpush("recent", song.id)
             self.stdout.write(song.file_path)
