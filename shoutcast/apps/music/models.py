@@ -70,7 +70,7 @@ class Artist(models.Model):
         try:
             artist_results = echoartist.search(name=self.artist)[0]
         except:
-           super(Artist, self).save(*args, **kwargs)
+            artist_results = echoartist.search(name="unknown")[0]
 
         try:
             bio = artist_results.biographies[0]
