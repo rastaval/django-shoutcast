@@ -69,31 +69,8 @@ class Artist(models.Model):
 
         try:
             artist_results = echoartist.search(name=self.artist)[0]
-            bio = artist_results.biographies[0]
-            image = artist_results.images[0]
-
-            try:
-                self.artist_image = image['image']
-            except IndexError:
-                self.artist.image = "http://i.imgur.com/dopj3.jpg"
-
-            try:
-                self.artist_bio = bio['text']
-            except IndexError:
-                self.artist_bio = "Couldnt find any artist information."
-
-            try:
-                self.artist_url = bio['url']
-            except IndexError:
-                self.artist_url = "http://google.com"
-
-            super(Artist, self).save(*args, **kwargs)
-
         except:
-            self.artist_url = "http://google.com"
-            self.artist_bio = "Couldnt find artist information."
-            self.artist_image = "http://i.imgur.com/dopj3.jpg"
-            super(Artist, self).save(*args, **kwargs)
+           super(Artist, self).save(*args, **kwargs)
 
         bio = artist_results.biographies[0]
         image = artist_results.images[0]
