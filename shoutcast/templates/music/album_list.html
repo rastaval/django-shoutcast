@@ -19,10 +19,10 @@
             {% if page_obj.has_previous %}
             <li class="prev"><a href="/albums?page={{ page_obj.previous_page_number}}">Prev.</a></li>
             {% else %}
-            <li class="prev disabled"><a href="/albums?page={{ page_obj.previous_page_number}}">Prev.</a></li>
+            <li class="prev disabled"><a href="">Prev.</a></li>
             {% endif %}
-            {% for i in page_obj.page_range %}
-            <li><a href="/albums?page={{ i }}">{{ i }}</a></li>
+            {% for pg in page_obj.page_range %}
+            <li><a href="/albums?page={{ pg }}">{{ pg }}</a></li>
             {% endfor %}
         </ul>
     </div>
