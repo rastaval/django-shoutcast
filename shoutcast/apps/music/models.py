@@ -81,20 +81,25 @@ class Artist(models.Model):
         except IndexError:
             image = {"image": "http://i.imgur.com/dopj3.jpg",}
 
-
         try:
             self.artist_image = image['image']
         except IndexError:
-            self.artist.image = "http://i.imgur.com/dopj3.jpg"
+            self.artist_image = "http://i.imgur.com/dopj3.jpg"
+        except KeyError:
+            self.artist_image = "http://i.imgur.com/dopj3.jpg"
 
         try:
             self.artist_bio = bio['text']
         except IndexError:
             self.artist_bio = "Couldnt find any artist information."
+        except KeyError:
+            self.artist_bio = "Couldnt find any artist information."
 
         try:
             self.artist_url = bio['url']
         except IndexError:
+            self.artist_url = "http://google.com"
+        except KeyError:
             self.artist_url = "http://google.com"
 
         super(Artist, self).save(*args, **kwargs) 
