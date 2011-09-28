@@ -111,13 +111,19 @@ def view_genre(request, pk):
 def upload_music(request):
     if request.method == 'POST':
         form = UploadForm(request.POST, request.FILES)
+        songthing = request.FILES['song_file']
         if form.is_valid():
-            newform = form.save(commit=False)
-            newform.user = request.user
-            newform.save()
+            try:
+                newform = form.save(commit=False)
+                newform.user = request.user
+                newform.save()
+            except:
+                pass
 
-            messages.success(request, "Song uploaded!")
-            return HttpResponseRedirect('/')
+        response = HttpResponse()
+        response.write("%s\r\n" % songthing.name)
+        return response
+            
     else:
         form = UploadForm()
 

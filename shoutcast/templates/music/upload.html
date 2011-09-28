@@ -4,6 +4,32 @@
 {% load i18n %}
 {% load ifsetting_tag %}
 
+{% block extra_head %}
+
+    <script type="text/javascript" src="{{ STATIC_URL }}js/swfobject.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.uploadify.v2.1.4.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $('#file_upload').uploadify({
+                'uploader': '{{ STATIC_URL }}swf/uploadify.swf',
+                'script': '/upload/',
+                'cancelImg': '{{ STATIC_URL }}images/cancel.png',
+                'folder': '{{ STATIC_URL }}userfiles',
+                'auto': true,
+                'multi': true,
+                'fileExt': '*.mp3',
+                'fileDesc': 'MP3 Files',
+                'queueID': 'file_upload_queue',
+                'removeCompleted': false
+            });
+        });
+
+    </script>
+
+{% endblock %}
+
 {% block body_class %}home{% endblock %}
 
 {% block header_main_text %}Upload your tunes{% endblock %}
@@ -19,7 +45,7 @@
                 {% csrf_token %}
                  <h3>If you want FTP bug ElGruntox on irc</h3>
                 <br/>
-                {{ form|as_uni_form }}
+                    <input id="file_upload" type="file" name="song_file" />
                 <br/>
                 <input type="submit" value="Upload" id="submit" />
             </form>
