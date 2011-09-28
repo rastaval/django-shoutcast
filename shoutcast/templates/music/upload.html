@@ -22,7 +22,15 @@
                 'fileExt': '*.mp3',
                 'fileDesc': 'MP3 Files',
                 'queueID': 'file_upload_queue',
-                'removeCompleted': false
+                'removeCompleted': false,
+                onError: function (a, b, c, d) {
+                    if (d.info == 404) {
+                        alert('Could not find upload script. Use a path relative to: '+'<?= getcwd() ?>');
+                    }
+                    else {
+                        alert('error '+d.type+": "+d.info);
+                    }
+                }
             });
         });
 
