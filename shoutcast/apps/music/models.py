@@ -11,7 +11,7 @@ from mutagen.mp3 import MP3
 from song_info import SongInfo
 from pyechonest import config
 from pyechonest import artist as echoartist
-
+import django
 
 api_key = settings.ECHOES_NEST_API_KEY
 config.ECHO_NEST_API_KEY = api_key

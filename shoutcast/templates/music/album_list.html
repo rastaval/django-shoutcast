@@ -16,7 +16,7 @@
     {% if pagination %}
     <div class="pagination">
         <ul>
-            {% if page_ob.has_previous %}
+            {% if page_obj.has_previous %}
             <li class="prev"><a href="/albums?page={{ page_obj.previous_page_number}}">Prev.</a></li>
             {% else %}
             <li class="prev disabled"><a href="/albums?page={{ page_obj.previous_page_number}}">Prev.</a></li>

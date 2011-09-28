@@ -30,19 +30,19 @@ urlpatterns = patterns("",
     url(r"^addshow/", "dj.views.addshow", name="add_show"),
 
     url(r"^artists/", ListView.as_view(
-            queryset=Artist.objects.order_by('-artist'),
+            queryset=Artist.objects.order_by('artist'),
             template_name='music/artist_list.html',
-            paginate_by=25,
+            paginate_by=15,
     )),
     url(r"^genres/", ListView.as_view(
-            queryset=Genre.objects.order_by('-genre'),
+            queryset=Genre.objects.order_by('genre'),
             template_name='music/genre_list.html',
-            paginate_by=25,
+            paginate_by=15,
     )),
     url(r"^albums/", ListView.as_view(
-            queryset=Album.objects.order_by('-album'),
+            queryset=Album.objects.order_by('album'),
             template_name='music/album_list.html',
-            paginate_by=25,
+            paginate_by=15,
     )),
 
     url(r"^album/(?P<pk>\d+)/$", "music.views.view_album", name="album_view"),

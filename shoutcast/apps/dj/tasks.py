@@ -10,7 +10,7 @@ import random
 import string
 from celery.task.schedules import crontab
 from celery.decorators import periodic_task
-
+import django
 
 r = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT)
 api = ApiQuery(settings.API_URL, settings.API_USER, settings.API_PASS)
@@ -26,6 +26,10 @@ def check_dj():
         api.request(op="modifydj", seq="620", name="dj", password=randompass, priority=8)
         api.request(op="unkickdj", seq="120", name="dj")
         r.delete('dj_pass', 'dj_timestart', 'dj_name', 'dj_showname', 'dj_ison')
+
+@periodic_task(run_every=crontab())
+def update_index():
+    django.core.management.call_command("update_index")
 
 
 
