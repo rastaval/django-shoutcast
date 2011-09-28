@@ -13,7 +13,7 @@
 {% block header_main_text %} Browse our Albums {% endblock %}
 
 {% block main_content %}
-    {% if pagination %}
+    {% if is_paginated %}
     <div class="pagination">
         <ul>
             {% if page_obj.has_previous %}
