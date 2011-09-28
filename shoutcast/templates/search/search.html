@@ -17,6 +17,29 @@
         {% if query %}
             <h3>Results</h3>
 
+            {% if is_paginated %}
+    <div class="pagination">
+        <ul>
+            {% if page_obj.has_previous %}
+            <li class="prev"><a href="/albums?page={{ page_obj.previous_page_number}}">Previous</a></li>
+            {% else %}
+            <li class="prev disabled"><a href="">Previous</a></li>
+            {% endif %}
+            {% for pg in paginator.page_range %}
+            <li class="page_{{ pg }}"><a href="/albums?page={{ pg }}">{{ pg }}</a></li>
+            {% if pg == page_obj.number %}
+                <script type="text/javascript">
+                    $(".page_{{ pg }}").addClass("active");
+                </script>
+            {% endif %}
+            {% endfor %}
+            {% if page_obj.has_next %}
+            <li class="next"><a href="/albums?page={{ page_obj.next_page_number }}">Next</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    {% endif %}
+
                 <table class="zebra-striped">
                     <thead>
                         <tr>

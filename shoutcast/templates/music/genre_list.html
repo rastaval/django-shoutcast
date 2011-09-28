@@ -13,17 +13,25 @@
 {% block header_main_text %} Browse the Genres {% endblock %}
 
 {% block main_content %}
-    {% if pagination %}
+    {% if is_paginated %}
     <div class="pagination">
         <ul>
-            {% if page_ob.has_previous %}
-            <li class="prev"><a href="/genres?page={{ page_obj.previous_page_number}}">Prev.</a></li>
+            {% if page_obj.has_previous %}
+            <li class="prev"><a href="/albums?page={{ page_obj.previous_page_number}}">Previous</a></li>
             {% else %}
-            <li class="prev disabled"><a href="/genres?page={{ page_obj.previous_page_number}}">Prev.</a></li>
+            <li class="prev disabled"><a href="">Previous</a></li>
             {% endif %}
-            {% for i in page_obj.page_range %}
-            <li><a href="/genres?page={{ i }}">{{ i }}</a></li>
+            {% for pg in paginator.page_range %}
+            <li class="page_{{ pg }}"><a href="/albums?page={{ pg }}">{{ pg }}</a></li>
+            {% if pg == page_obj.number %}
+                <script type="text/javascript">
+                    $(".page_{{ pg }}").addClass("active");
+                </script>
+            {% endif %}
             {% endfor %}
+            {% if page_obj.has_next %}
+            <li class="next"><a href="/albums?page={{ page_obj.next_page_number }}">Next</a></li>
+            {% endif %}
         </ul>
     </div>
     {% endif %}
@@ -41,4 +49,26 @@
             {% endfor %}
         </tbody>
     </table>
+    {% if is_paginated %}
+    <div class="pagination">
+        <ul>
+            {% if page_obj.has_previous %}
+            <li class="prev"><a href="/albums?page={{ page_obj.previous_page_number}}">Previous</a></li>
+            {% else %}
+            <li class="prev disabled"><a href="">Previous</a></li>
+            {% endif %}
+            {% for pg in paginator.page_range %}
+            <li class="page_{{ pg }}"><a href="/albums?page={{ pg }}">{{ pg }}</a></li>
+            {% if pg == page_obj.number %}
+                <script type="text/javascript">
+                    $(".page_{{ pg }}").addClass("active");
+                </script>
+            {% endif %}
+            {% endfor %}
+            {% if page_obj.has_next %}
+            <li class="next"><a href="/albums?page={{ page_obj.next_page_number }}">Next</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    {% endif %}
 {% endblock %}
