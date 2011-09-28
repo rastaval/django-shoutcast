@@ -32,7 +32,7 @@
             <fieldset class="inlineLabels">
                 {{ form|as_uni_form }}
                 {% if redirect_field_value %}
-                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                    <input type="hidden" name="{{ redirect_field_name }}" value="/" />
                 {% endif %}
                    <br/>
                 <div class="form_block">
