@@ -22,7 +22,7 @@
             <li class="prev disabled"><a href="">Prev.</a></li>
             {% endif %}
             {% for pg in paginator.page_range %}
-            <li><a class="page_{{ pg }}" href="/albums?page={{ pg }}">{{ pg }}</a></li>
+            <li class="page_{{ pg }}"><a href="/albums?page={{ pg }}">{{ pg }}</a></li>
             {% if pg == page_obj.number %}
                 <script type="text/javascript">
                     $(".page_{{ pg }}").addClass("active");
