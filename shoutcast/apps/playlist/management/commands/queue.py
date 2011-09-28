@@ -20,7 +20,7 @@ class Command(BaseCommand):
             #lpush songs into playlist
             r_song = r.rpop("playlist")
             song = Song.objects.get(id=r_song)
-            r.lpush("recent", song.id)
+            r.rpush("recent", song.id)
             try:
                 coming = r.lrange("playlist", 0, 0)[0]
             except:
