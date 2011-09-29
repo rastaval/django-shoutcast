@@ -128,3 +128,26 @@ def upload_music(request):
         "user":request.user,
     }, context_instance=RequestContext(request))
 
+
+@login_required
+def votesong(request):
+    if r.lindex('songvote', 0):
+        if request.user.username == "mumphster":
+            r.delete('songvote')
+            api.request(op="nexttrack", seq="420")
+            messages.success(request, "Admin: Changed Song.")
+        if r.llen('songvote') >= 5:
+            r.delete('songvote')
+            api.request(op="nexttrack", seq="420")
+            messages.success(request, "Vote noted.")
+        else:
+            if request.user.id in r.lrange('songvote', 0, -1):
+                messages.error(request, "You already voted against this DJ.")
+            else:
+                r.rpush('songvote', request.user.id)
+                messages.success(request, "Vote noted.")
+    else:
+        r.rpush('songvote', request.user.id)
+        messages.success(request, "Vote noted.")
+    return redirect('/')
+

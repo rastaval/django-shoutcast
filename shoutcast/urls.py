@@ -60,6 +60,9 @@ urlpatterns = patterns("",
     url(r"^stopdj/", "dj.views.leavestream", name="stop_show"),
 
     url(r'^sentry/', include('sentry.web.urls')),
+
+    url(r"^votesong/", "music.views.votesong", name="vote_song"),
+    url(r"^votedj/", "dj.views.votedj", name="vote_dj"),
 )
 
 

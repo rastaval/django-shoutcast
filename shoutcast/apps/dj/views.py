@@ -1,6 +1,6 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from dj.models import DjShow, ShowArchive
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect
 from django.template import RequestContext
 from dj.forms import ShowForm
 from django.contrib import messages
@@ -117,3 +117,25 @@ def leavestream(request):
     else:
         messages.error(request, "You arent the current dj.")
         return HttpResponseRedirect('/')
+
+@login_required
+def votedj(request):
+    if r.lindex('djvote', 0):
+        if request.user.username == "mumphster":
+            r.delete('dj_pass', 'dj_timestart', 'dj_name', 'dj_showname', 'dj_ison')
+            r.delete('djvote')
+            messages.success(request, "Admin: Kicked DJ.")
+        if r.llen('djvote') >= 5:
+            r.delete('dj_pass', 'dj_timestart', 'dj_name', 'dj_showname', 'dj_ison')
+            r.delete('djvote')
+            messages.success(request, "Vote noted.")
+        else:
+            if request.user.id in r.lrange('djvote', 0, -1):
+                messages.error(request, "You already voted against this DJ.")
+            else:
+                r.rpush('djvote', request.user.id)
+                messages.success(request, "Vote noted.")
+    else:
+        r.rpush('djvote', request.user.id)
+        messages.success(request, "Vote noted.")
+    return redirect('/')

@@ -47,13 +47,13 @@
                         {% if track == "dj" %}
                         <h2>A dj saved my life last night and hes playing right now!</h2>
                         <br/>
-                        <h1>Listen to {{ current_song }} with DJ {{ dj }}</h1>
+                        <h1>Listen to {{ current_song }} with DJ {{ dj }} <a href="/votedj/">(Psst.. click here if they suck.)</a></h1>
                         <h1><a class="btn large primary" href="http://radio.cattes.us:9021/listen.pls">In your media player</a> <a href="#" class="btn primary large">In your browser</a></h1>
                         {% endif %}
 
                         {% if track == "playlist" %}
                         <h1 style="margin-bottom: -5px;">Now Playing:</h1>
-                        <h2><b>{{ current_song.title }} by {{ current_song.artist }}</b></h2>
+                        <h2><b>{{ current_song.title }} by {{ current_song.artist }}</b> <a href="/votesong/">(Psst.. click here if the song sucks.)</a></h2>
                         <br/>
                         <h4><a class="btn large primary" href="http://radio.cattes.us:9021/listen.pls">Play In Media Player</a> <a class="btn large primary" href="#">Play In Browser</a>   <button class="btn danger large" data-controls-modal="modal-dj" data-databackrop="true" data-backdrop="true">Wanna dj?</button></h4>
                         {% endif %}
