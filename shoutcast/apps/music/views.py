@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, HttpResponseRedirect
 from django.conf import settings
-from django.shortcuts import render_to_response, redirect
+from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.core.cache import cache
 
@@ -110,36 +110,21 @@ def view_genre(request, pk):
 
 @csrf_exempt
 @login_required
-def music_upload_post(request):
-    if request.method == 'POST':
-        songthing = request.FILES['song_file']
-        try:
-            dest = open(songthing.name, "wb")
-            for block in songthing.chunks():
-                dest.write(block)
-            dest.close()
-
-            song = Upload()
-            song.song_file = songthing
-            song.user = request.user
-            song.save()
-        except IOError:
-            pass
-
-        response = HttpResponse()
-        response.write("%s\r\n" % songthing.name)
-        return response
-    else:
-        return redirect('/')
-
-@login_required
 def upload_music(request):
+    if request.method == 'POST':
+        form = UploadForm(request.POST, request.FILES)
+        songthing = request.FILES['song_file']
+        if form.is_valid():
+            newform = form.save(commit=False)
+            newform.user = request.user
+            newform.save()
 
-    form = UploadForm()
+            messages.success(request, "Song uploaded!")
 
+    else:
+        form = UploadForm()
     return render_to_response('music/upload.html', {
-        "user": request.user,
-        "form": form,
+        "form":form,
+        "user":request.user,
     }, context_instance=RequestContext(request))
-
 
