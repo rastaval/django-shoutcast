@@ -124,6 +124,8 @@ def votedj(request):
         if request.user.username == "mumphster":
             r.delete('dj_pass', 'dj_timestart', 'dj_name', 'dj_showname', 'dj_ison')
             r.delete('djvote')
+            api.request(op="kickdj", seq="320")
+            api.request(op="unkickdj", seq="120")
             messages.success(request, "Admin: Kicked DJ.")
         if r.llen('djvote') >= 5:
             r.delete('dj_pass', 'dj_timestart', 'dj_name', 'dj_showname', 'dj_ison')
@@ -136,6 +138,13 @@ def votedj(request):
                 r.rpush('djvote', request.user.id)
                 messages.success(request, "Vote noted.")
     else:
-        r.rpush('djvote', request.user.id)
-        messages.success(request, "Vote noted.")
+        if request.user.username == "mumphster":
+            r.delete('dj_pass', 'dj_timestart', 'dj_name', 'dj_showname', 'dj_ison')
+            r.delete('djvote')
+            api.request(op="kickdj", seq="320")
+            api.request(op="unkickdj", seq="220", name="dj")
+            messages.success(request, "Admin: Kicked DJ.")
+        else:
+            r.rpush('djvote', request.user.id)
+            messages.success(request, "Vote noted.")
     return redirect('/')
