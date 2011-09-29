@@ -22,7 +22,7 @@ from django.views.decorators.csrf import csrf_exempt
 r = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT)
 api = ApiQuery(settings.API_URL, settings.API_USER, settings.API_PASS)
 
-@login_required
+
 def index(request):
     rlist = r.lrange("recent", 0, -1)[:3]
     rsongs = Song.objects.filter(pk__in=rlist)
@@ -81,7 +81,6 @@ def index(request):
         "coming": coming,
     }, context_instance=RequestContext(request))
 
-@login_required
 def view_album(request, pk):
     album = Album.objects.get(pk=pk)
     songs = album.song_set.all()
@@ -90,7 +89,6 @@ def view_album(request, pk):
         "album": album,
     }, context_instance=RequestContext(request))
 
-@login_required
 def view_artist(request, pk):
     artist = Artist.objects.get(pk=pk)
     songs = artist.song_set.all()
@@ -99,7 +97,6 @@ def view_artist(request, pk):
         "artist": artist,
     }, context_instance=RequestContext(request))
 
-@login_required
 def view_genre(request, pk):
     genre = Genre.objects.get(pk=pk)
     songs = genre.song_set.all()
@@ -129,7 +126,6 @@ def upload_music(request):
     }, context_instance=RequestContext(request))
 
 
-@login_required
 def votesong(request):
     if r.lindex('songvote', 0):
         if request.user.username == "mumphster":

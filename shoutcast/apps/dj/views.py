@@ -118,7 +118,7 @@ def leavestream(request):
         messages.error(request, "You arent the current dj.")
         return HttpResponseRedirect('/')
 
-@login_required
+
 def votedj(request):
     if r.lindex('djvote', 0):
         if request.user.username == "mumphster":
