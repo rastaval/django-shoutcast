@@ -57,6 +57,7 @@ urlpatterns = patterns("",
     url(r"^search/", include('haystack.urls')),
     url(r"^addsong/(?P<song>\d+)/$", "playlist.views.add_to_playlist", name="add_to_playlist"),
     url(r"^upload/", "music.views.upload_music", name="music_upload"),
+    url(r"^post_upload", "music.views.music_upload_post", name="music_upload_backend"),
     url(r"^stopdj/", "dj.views.leavestream", name="stop_show"),
 
     url(r'^sentry/', include('sentry.web.urls')),

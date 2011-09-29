@@ -110,7 +110,7 @@ def view_genre(request, pk):
 
 @csrf_exempt
 @login_required
-def upload_music(request):
+def music_upload_post(request):
     if request.method == 'POST':
         form = UploadForm(request.POST, request.FILES)
         songthing = request.FILES['song_file']
@@ -125,9 +125,10 @@ def upload_music(request):
         response = HttpResponse()
         response.write("%s\r\n" % songthing.name)
         return response
-            
-    else:
-        form = UploadForm()
+
+def upload_music(request):
+
+    form = UploadForm()
 
     return render_to_response('music/upload.html', {
         "user": request.user,
