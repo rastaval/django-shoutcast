@@ -49,7 +49,7 @@
                             <th>Title</th>
                             <th>Artist</th>
                             <th>Album</th>
-                            <th>Link</th>
+                            <th>Add</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,7 +59,7 @@
                             <td>{{ result.object.title }}</td>
                             <td>{{ result.object.artist.artist }}</td>
                             <td>{{ result.object.album.album }}</td>
-                            <td><a href="/song/{{ result.object.id }}">View</a></td>
+                            <td><a class="label notice" href="/addsong/{{ result.object.id }}">Add to Playlist</a></td>
                         </tr>
                     {% empty %}
                             No Results Found.
