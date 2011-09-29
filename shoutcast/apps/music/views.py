@@ -16,6 +16,7 @@ import redis
 from utils.trans_api import ApiQuery
 from apps.music.models import Album, Artist, Genre
 from music.forms import UploadForm
+from django.views.decorators.csrf import csrf_exempt
 
 
 r = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT)
@@ -107,6 +108,7 @@ def view_genre(request, pk):
         "songs": songs,
     }, context_instance=RequestContext(request))
 
+@csrf_exempt
 @login_required
 def upload_music(request):
     if request.method == 'POST':
