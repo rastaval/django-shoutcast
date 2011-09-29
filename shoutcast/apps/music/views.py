@@ -112,20 +112,19 @@ def view_genre(request, pk):
 @login_required
 def music_upload_post(request):
     if request.method == 'POST':
-        form = UploadForm(request.POST, request.FILES)
         songthing = request.FILES['song_file']
-        if form.is_valid():
-            try:
-                dest = open(songthing.name, "wb")
-                for block in songthing.chunks():
-                    dest.write(block)
-                dest.close()
+        try:
+            dest = open(songthing.name, "wb")
+            for block in songthing.chunks():
+                dest.write(block)
+            dest.close()
 
-                newform = form.save(commit=False)
-                newform.user = request.user
-                newform.save()
-            except:
-                pass
+            song = Upload()
+            song.song_file = songthing
+            song.user = request.user
+            song.save()
+        except IOError:
+            pass
 
         response = HttpResponse()
         response.write("%s\r\n" % songthing.name)
