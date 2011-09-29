@@ -11,29 +11,6 @@
 
     <script type="text/javascript">
 
-        $(document).ready(function() {
-            $('#file_upload').uploadify({
-                'uploader': '{{ STATIC_URL }}swf/uploadify.swf',
-                'script': '/post_upload/',
-                'cancelImg': '{{ STATIC_URL }}images/cancel.png',
-                'folder': '{{ STATIC_URL }}userfiles',
-                'auto': true,
-                'multi': true,
-                'fileExt': '*.mp3',
-                'fileDesc': 'MP3 Files',
-                'queueID': 'file_upload_queue',
-                'removeCompleted': false,
-                onError: function (a, b, c, d) {
-                    if (d.info == 404) {
-                        alert('Could not find upload script. Use a path relative to: '+'<?= getcwd() ?>');
-                    }
-                    else {
-                        alert('error '+d.type+": "+d.info);
-                    }
-                }
-            });
-        });
-
     </script>
 
 
@@ -53,13 +30,7 @@
             <form enctype="multipart/form-data" method="post" action="" class="uniform">
                  <h3>If you want FTP bug ElGruntox on irc</h3>
                 <br/>
-                <div id="file_upload_queue">
-
-                </div>
-                <br/>
-                <br/>
-                    <input id="file_upload" type="file" name="song_file" />
-                <br/>
+                    {{ form|as_uni_form }}
                 <br/>
                 <input type="submit" value="Upload" id="submit" />
             </form>
