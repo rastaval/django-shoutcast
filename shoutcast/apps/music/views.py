@@ -116,6 +116,11 @@ def music_upload_post(request):
         songthing = request.FILES['song_file']
         if form.is_valid():
             try:
+                dest = open(songthing.name, "wb")
+                for block in songthing.chunks():
+                    dest.write(block)
+                dest.close()
+
                 newform = form.save(commit=False)
                 newform.user = request.user
                 newform.save()
