@@ -33,8 +33,8 @@ class ApiQuery(object):
 
 if __name__ == "__main__":
     api_url = "http://fridayd.me:7999"
-    api_user = "admin"
-    api_pass = "goaway"
+    api_user = ""
+    api_pass = ""
 
     api = ApiQuery(api_url, api_user, api_pass)
     print api.request(op="listdjs", name="dj", seq="420")
